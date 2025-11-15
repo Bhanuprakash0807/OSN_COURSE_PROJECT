@@ -1,0 +1,13 @@
+Enter username: Welcome alice! Type 'help' for commands.
+
+> File Created Successfully!
+> Access granted successfully!
+> Access granted successfully!
+> File: persist.txt
+Owner: alice
+Created: 2025-11-15 18:41:50
+Last Modified: 2025-11-15 18:41:50
+Size: 0 bytes
+Last Accessed: 2025-11-15 18:41:50 by -
+Access: alice (RW), bob (R), carol (RW)
+> 

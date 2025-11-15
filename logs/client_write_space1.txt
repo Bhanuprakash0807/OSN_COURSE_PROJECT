@@ -1,0 +1,8 @@
+Enter username: Welcome alice! Type 'help' for commands.
+
+> Enter updates (format: <word_index> <content>), type ETIRW to finish:
+Write Successful!
+> Enter updates (format: <word_index> <content>), type ETIRW to finish:
+Write Successful!
+> Im just a mouse. I dont like PNS
+> 

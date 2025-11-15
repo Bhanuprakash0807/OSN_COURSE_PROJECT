@@ -1,0 +1,6 @@
+Enter username: Welcome alice! Type 'help' for commands.
+
+> Enter updates (format: <word_index> <content>), type ETIRW to finish:
+ERROR: Sentence index out of range
+> Im just a mouse. I dont like PNS
+> 

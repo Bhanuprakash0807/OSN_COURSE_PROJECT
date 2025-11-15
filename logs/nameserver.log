@@ -1,0 +1,166 @@
+[2025-11-15 18:41:25] [NM] Name Server started on port 8000
+[2025-11-15 18:41:37] [NM] Storage server registered successfully
+[2025-11-15 18:41:37] [NM] Request from 127.0.0.1:55872 - Request received
+[2025-11-15 18:41:37] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-15 18:41:37] [NM] Response sent: error_code=0
+[2025-11-15 18:41:37] [NM] Storage server registered successfully
+[2025-11-15 18:41:37] [NM] Request from 127.0.0.1:55896 - Request received
+[2025-11-15 18:41:37] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-15 18:41:37] [NM] Response sent: error_code=0
+[2025-11-15 18:41:50] [NM] Request from 127.0.0.1:43458 - Request received
+[2025-11-15 18:41:50] [NM] Client registered successfully
+[2025-11-15 18:41:50] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:41:50] [NM] Response sent: error_code=0
+[2025-11-15 18:41:50] [NM] Request from 127.0.0.1:43466 - Request received
+[2025-11-15 18:41:50] [NM] About to send response for op=102, error_code=0, data='Created'
+[2025-11-15 18:41:50] [NM] Response sent: error_code=0
+[2025-11-15 18:41:50] [NM] Request from 127.0.0.1:43474 - Request received
+[2025-11-15 18:41:50] [NM] About to send response for op=110, error_code=0, data='Access granted successfully'
+[2025-11-15 18:41:50] [NM] Response sent: error_code=0
+[2025-11-15 18:41:50] [NM] Request from 127.0.0.1:43476 - Request received
+[2025-11-15 18:41:50] [NM] About to send response for op=110, error_code=0, data='Access granted successfully'
+[2025-11-15 18:41:50] [NM] Response sent: error_code=0
+[2025-11-15 18:41:50] [NM] Request from 127.0.0.1:43478 - Request received
+[2025-11-15 18:41:50] [NM] About to send response for op=107, error_code=0, data='File: persist.txt
+Owner: alice
+Created: 2025-11-15 18:41:50
+Last Modified: 2025-11-15 18:41:50
+Size: 0 bytes
+Last Accessed: 2025-11-15 18:41:50 by -
+Access: alice (RW), bob (R), carol (RW)'
+[2025-11-15 18:41:50] [NM] Response sent: error_code=0
+[2025-11-15 18:41:58] [NM] Storage server registered successfully
+[2025-11-15 18:41:58] [NM] Request from 127.0.0.1:41016 - Request received
+[2025-11-15 18:41:58] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-15 18:41:58] [NM] Response sent: error_code=0
+[2025-11-15 18:42:04] [NM] Request from 127.0.0.1:53654 - Request received
+[2025-11-15 18:42:04] [NM] Client registered successfully
+[2025-11-15 18:42:04] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:42:04] [NM] Response sent: error_code=0
+[2025-11-15 18:42:04] [NM] Request from 127.0.0.1:53662 - Request received
+[2025-11-15 18:42:04] [NM] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| y.txt      |     0 |     0 | 2025-11-15 18:42:04 |       |
+| exec.txt   |     3 |    18 | 2025-11-15 18:42:04 |       |
+| sptest.txt |     9 |    41 | 2025-11-15 18:42:04 |       |
+| z.txt      |     0 |     0 | 2025-11-15 18:42:04 |       |
+| t.txt      |     0 |     0 | 2025-11-15 18:42:04 |       |
+| acl.txt    |     0 |     0 | 2025-11-15 18:42:04 |       |
+| mouse.txt  |     0 |     0 | 2025-11-15 18:42:04 |       |
+| f2.txt     |     4 |    18 | 2025-11-15 18:42:04 |       |
+| persist.txt |     0 |     0 | 2025-11-15 18:41:50 | alice |
+---------------------------------------------------------
+'
+[2025-11-15 18:42:04] [NM] Response sent: error_code=0
+[2025-11-15 18:42:04] [NM] Request from 127.0.0.1:53672 - Request received
+[2025-11-15 18:42:04] [NM] About to send response for op=107, error_code=0, data='File: persist.txt
+Owner: alice
+Created: 2025-11-15 18:41:50
+Last Modified: 2025-11-15 18:41:50
+Size: 0 bytes
+Last Accessed: 2025-11-15 18:41:50 by -
+Access: alice (RW), bob (R), carol (RW)'
+[2025-11-15 18:42:04] [NM] Response sent: error_code=0
+[2025-11-15 18:42:22] [NM] Request from 127.0.0.1:58948 - Request received
+[2025-11-15 18:42:22] [NM] Client registered successfully
+[2025-11-15 18:42:22] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:42:22] [NM] Response sent: error_code=0
+[2025-11-15 18:42:22] [NM] Request from 127.0.0.1:58952 - Request received
+[2025-11-15 18:42:22] [NM] Forwarding op 105 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:42:22] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:42:22] [NM] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:42:22] [NM] Response sent: error_code=0
+[2025-11-15 18:42:22] [NM] Request from 127.0.0.1:58964 - Request received
+[2025-11-15 18:42:22] [NM] Forwarding op 105 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:42:22] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:42:22] [NM] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:42:22] [NM] Response sent: error_code=0
+[2025-11-15 18:42:22] [NM] Request from 127.0.0.1:58966 - Request received
+[2025-11-15 18:42:22] [NM] Forwarding op 104 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:42:22] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:42:22] [NM] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:42:22] [NM] Response sent: error_code=0
+[2025-11-15 18:42:34] [NM] Request from 127.0.0.1:36552 - Request received
+[2025-11-15 18:42:34] [NM] Client registered successfully
+[2025-11-15 18:42:34] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:42:34] [NM] Response sent: error_code=0
+[2025-11-15 18:42:34] [NM] Request from 127.0.0.1:36556 - Request received
+[2025-11-15 18:42:34] [NM] Forwarding op 105 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:42:34] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:42:34] [NM] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:42:34] [NM] Response sent: error_code=0
+[2025-11-15 18:42:34] [NM] Request from 127.0.0.1:36566 - Request received
+[2025-11-15 18:42:34] [NM] Forwarding op 104 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:42:34] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:42:34] [NM] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:42:34] [NM] Response sent: error_code=0
+[2025-11-15 18:42:56] [NM] Request from 127.0.0.1:38926 - Request received
+[2025-11-15 18:42:56] [NM] Client registered successfully
+[2025-11-15 18:42:56] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:42:56] [NM] Response sent: error_code=0
+[2025-11-15 18:42:56] [NM] Request from 127.0.0.1:38930 - Request received
+[2025-11-15 18:42:56] [NM] About to send response for op=102, error_code=0, data='Created'
+[2025-11-15 18:42:56] [NM] Response sent: error_code=0
+[2025-11-15 18:42:56] [NM] Request from 127.0.0.1:38940 - Request received
+[2025-11-15 18:42:56] [NM] Forwarding op 105 for file 'do.sh' from user 'alice'
+[2025-11-15 18:42:56] [NM] Selected SS 127.0.0.1:9002 for file 'do.sh'
+[2025-11-15 18:42:56] [NM] About to send response for op=105, error_code=0, data='127.0.0.1 9002'
+[2025-11-15 18:42:56] [NM] Response sent: error_code=0
+[2025-11-15 18:42:56] [NM] Request from 127.0.0.1:38954 - Request received
+[2025-11-15 18:42:56] [NM] About to send response for op=112, error_code=0, data='hello
+'
+[2025-11-15 18:42:56] [NM] Response sent: error_code=0
+[2025-11-15 18:43:03] [NM] Request from 127.0.0.1:38968 - Request received
+[2025-11-15 18:43:03] [NM] Client registered successfully
+[2025-11-15 18:43:03] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:43:03] [NM] Response sent: error_code=0
+[2025-11-15 18:43:03] [NM] Request from 127.0.0.1:38974 - Request received
+[2025-11-15 18:43:03] [NM] About to send response for op=112, error_code=2, data='Read permission required'
+[2025-11-15 18:43:03] [NM] Response sent: error_code=2
+[2025-11-15 18:43:13] [NM] Request from 127.0.0.1:50434 - Request received
+[2025-11-15 18:43:13] [NM] Client registered successfully
+[2025-11-15 18:43:13] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:43:13] [NM] Response sent: error_code=0
+[2025-11-15 18:43:13] [NM] Request from 127.0.0.1:50450 - Request received
+[2025-11-15 18:43:13] [NM] About to send response for op=109, error_code=0, data='Users:
+--> alice
+--> dave
+--> bob
+'
+[2025-11-15 18:43:13] [NM] Response sent: error_code=0
+[2025-11-15 18:43:28] [NM] Request from 127.0.0.1:47572 - Request received
+[2025-11-15 18:43:28] [NM] Client registered successfully
+[2025-11-15 18:43:28] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-15 18:43:28] [NM] Response sent: error_code=0
+[2025-11-15 18:43:28] [NM] Request from 127.0.0.1:47580 - Request received
+[2025-11-15 18:43:28] [NM] Forwarding op 104 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:43:28] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:43:28] [NM] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:43:28] [NM] Response sent: error_code=0
+[2025-11-15 18:43:28] [NM] Request from 127.0.0.1:47592 - Request received
+[2025-11-15 18:43:28] [NM] Forwarding op 105 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:43:28] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:43:28] [NM] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:43:28] [NM] Response sent: error_code=0
+[2025-11-15 18:43:28] [NM] Request from 127.0.0.1:47594 - Request received
+[2025-11-15 18:43:28] [NM] Forwarding op 104 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:43:28] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:43:28] [NM] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:43:28] [NM] Response sent: error_code=0
+[2025-11-15 18:43:28] [NM] Request from 127.0.0.1:47602 - Request received
+[2025-11-15 18:43:28] [NM] Forwarding op 113 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:43:28] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:43:28] [NM] About to send response for op=113, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:43:28] [NM] Response sent: error_code=0
+[2025-11-15 18:43:28] [NM] Request from 127.0.0.1:47606 - Request received
+[2025-11-15 18:43:28] [NM] Forwarding op 104 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:43:28] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:43:28] [NM] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:43:28] [NM] Response sent: error_code=0
+[2025-11-15 18:43:28] [NM] Request from 127.0.0.1:47610 - Request received
+[2025-11-15 18:43:28] [NM] Forwarding op 108 for file 'persist.txt' from user 'alice'
+[2025-11-15 18:43:28] [NM] Selected SS 127.0.0.1:9001 for file 'persist.txt'
+[2025-11-15 18:43:28] [NM] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-15 18:43:28] [NM] Response sent: error_code=0

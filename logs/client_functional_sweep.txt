@@ -1,0 +1,10 @@
+Enter username: Welcome alice! Type 'help' for commands.
+
+> Im just a mouse. I dont like PNS
+> Enter updates (format: <word_index> <content>), type ETIRW to finish:
+Write Successful!
+> Im just a mouse. Hey I dont like PNS
+> Undo Successful!
+> Im just a mouse. I dont like PNS
+> Im just a mouse. I dont like PNS 
+> 

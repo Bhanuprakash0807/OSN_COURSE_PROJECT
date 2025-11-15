@@ -1,0 +1,56 @@
+[2025-11-13 19:13:24] [NM] Name Server started on port 8000
+[2025-11-13 19:13:24] [NM] Request from 127.0.0.1:40426 - Request received
+[2025-11-13 19:13:24] [NM] Client registered successfully
+[2025-11-13 19:13:24] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-13 19:13:24] [NM] Response sent: error_code=0
+[2025-11-13 19:13:24] [NM] Request from 127.0.0.1:40442 - Request received
+[2025-11-13 19:13:24] [NM] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+---------------------------------------------------------
+'
+[2025-11-13 19:13:24] [NM] Response sent: error_code=0
+[2025-11-13 19:13:24] [NM] Request from 127.0.0.1:40452 - Request received
+[2025-11-13 19:13:24] [NM] About to send response for op=107, error_code=1, data='File not found'
+[2025-11-13 19:13:24] [NM] Response sent: error_code=1
+[2025-11-13 19:13:24] [NM] Request from 127.0.0.1:40456 - Request received
+[2025-11-13 19:13:24] [NM] About to send response for op=109, error_code=0, data='Users:
+--> user1
+'
+[2025-11-13 19:13:24] [NM] Response sent: error_code=0
+[2025-11-13 19:13:25] [NM] Storage server registered successfully
+[2025-11-13 19:13:25] [NM] Storage server registered successfully
+[2025-11-13 19:13:25] [NM] Request from 127.0.0.1:40472 - Request received
+[2025-11-13 19:13:25] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-13 19:13:25] [NM] Response sent: error_code=0
+[2025-11-13 19:13:25] [NM] Request from 127.0.0.1:40482 - Request received
+[2025-11-13 19:13:25] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-13 19:13:25] [NM] Response sent: error_code=0
+[2025-11-13 19:34:41] [NM] Storage server registered successfully
+[2025-11-13 19:34:41] [NM] Storage server registered successfully
+[2025-11-13 19:34:41] [NM] Request from 127.0.0.1:40118 - Request received
+[2025-11-13 19:34:41] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-13 19:34:41] [NM] Response sent: error_code=0
+[2025-11-13 19:34:41] [NM] Request from 127.0.0.1:40112 - Request received
+[2025-11-13 19:34:41] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-13 19:34:41] [NM] Response sent: error_code=0
+[2025-11-13 19:37:00] [NM] Request from 127.0.0.1:51826 - Request received
+[2025-11-13 19:37:00] [NM] Client registered successfully
+[2025-11-13 19:37:00] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-13 19:37:00] [NM] Response sent: error_code=0
+[2025-11-13 19:37:00] [NM] Request from 127.0.0.1:51840 - Request received
+[2025-11-13 19:37:00] [NM] About to send response for op=102, error_code=0, data='Created'
+[2025-11-13 19:37:00] [NM] Response sent: error_code=0
+[2025-11-13 19:37:00] [NM] Request from 127.0.0.1:51854 - Request received
+[2025-11-13 19:37:00] [NM] About to send response for op=110, error_code=0, data='Access granted successfully'
+[2025-11-13 19:37:00] [NM] Response sent: error_code=0
+[2025-11-13 19:37:00] [NM] Request from 127.0.0.1:51856 - Request received
+[2025-11-13 19:37:00] [NM] About to send response for op=107, error_code=0, data='File: mouse.txt
+Owner: alice
+Created: 2025-11-13 19:37:00
+Last Modified: 2025-11-13 19:37:00
+Size: 0 bytes
+Last Accessed: 2025-11-13 19:37:00 by -
+Access: alice (RW), bob (R)'
+[2025-11-13 19:37:00] [NM] Response sent: error_code=0

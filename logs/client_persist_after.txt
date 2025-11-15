@@ -1,0 +1,24 @@
+Enter username: Welcome dave! Type 'help' for commands.
+
+> All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| y.txt      |     0 |     0 | 2025-11-15 18:42:04 |       |
+| exec.txt   |     3 |    18 | 2025-11-15 18:42:04 |       |
+| sptest.txt |     9 |    41 | 2025-11-15 18:42:04 |       |
+| z.txt      |     0 |     0 | 2025-11-15 18:42:04 |       |
+| t.txt      |     0 |     0 | 2025-11-15 18:42:04 |       |
+| acl.txt    |     0 |     0 | 2025-11-15 18:42:04 |       |
+| mouse.txt  |     0 |     0 | 2025-11-15 18:42:04 |       |
+| f2.txt     |     4 |    18 | 2025-11-15 18:42:04 |       |
+| persist.txt |     0 |     0 | 2025-11-15 18:41:50 | alice |
+---------------------------------------------------------
+> File: persist.txt
+Owner: alice
+Created: 2025-11-15 18:41:50
+Last Modified: 2025-11-15 18:41:50
+Size: 0 bytes
+Last Accessed: 2025-11-15 18:41:50 by -
+Access: alice (RW), bob (R), carol (RW)
+> 

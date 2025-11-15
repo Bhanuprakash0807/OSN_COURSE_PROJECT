@@ -1,0 +1,4 @@
+Enter username: Welcome bob! Type 'help' for commands.
+
+> ERROR: Read permission required
+> 
