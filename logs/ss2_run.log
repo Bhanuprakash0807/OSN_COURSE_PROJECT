@@ -1,0 +1,16 @@
+[2025-11-17 23:44:09] [SS] Registered with name server successfully
+[2025-11-17 23:44:09] [SS] Storage Server started on port 9002
+[2025-11-17 23:46:02] [SS] accept() ok: 127.0.0.1:54374
+[SS-DBG] about to process_client ptr=0x603c984366b0 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:46:02] [SS] process_client: start
+[2025-11-17 23:46:02] [SS] Accepted connection from 127.0.0.1:54374
+[2025-11-17 23:46:02] [SS] Request from 127.0.0.1:54374 - Request received
+[2025-11-17 23:46:02] [SS] Message type=204 user=
+[2025-11-17 23:46:22] [SS] accept() ok: 127.0.0.1:54752
+[SS-DBG] about to process_client ptr=0x603c984366b0 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:46:22] [SS] process_client: start
+[2025-11-17 23:46:22] [SS] Accepted connection from 127.0.0.1:54752
+[2025-11-17 23:46:22] [SS] Request from 127.0.0.1:54752 - Request received
+[2025-11-17 23:46:22] [SS] Message type=204 user=

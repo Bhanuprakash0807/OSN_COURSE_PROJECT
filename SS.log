@@ -1,278 +1,78 @@
-[2025-11-15 18:48:37] Warning: File do.sh has unsaved changes for 341 seconds (last modifier: alice)
-[2025-11-15 18:49:35] Loading file: y.txt
-[2025-11-15 18:49:35] Loading file: exec.txt
-[2025-11-15 18:49:35] Loading file: persist.txt
-[2025-11-15 18:49:35] Loading file: sptest.txt
-[2025-11-15 18:49:35] Loading file: z.txt
-[2025-11-15 18:49:35] Loading file: t.txt
-[2025-11-15 18:49:35] Loading file: acl.txt
-[2025-11-15 18:49:35] Loading file: mouse.txt
-[2025-11-15 18:49:35] Loading file: f2.txt
-[2025-11-15 18:49:35] Registered with name server successfully
-[2025-11-15 18:49:35] Storage Server started on port 9090
-[2025-11-15 18:49:37] Warning: File do.sh has unsaved changes for 401 seconds (last modifier: alice)
-[2025-11-15 18:50:37] Warning: File do.sh has unsaved changes for 461 seconds (last modifier: alice)
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44214
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44214
-[2025-11-15 18:50:52] Request from 127.0.0.1:44214 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44226
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44226
-[2025-11-15 18:50:52] Request from 127.0.0.1:44226 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44234
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44234
-[2025-11-15 18:50:52] Request from 127.0.0.1:44234 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44240
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44240
-[2025-11-15 18:50:52] Request from 127.0.0.1:44240 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44256
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44256
-[2025-11-15 18:50:52] Request from 127.0.0.1:44256 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44272
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44272
-[2025-11-15 18:50:52] Request from 127.0.0.1:44272 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44286
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44286
-[2025-11-15 18:50:52] Request from 127.0.0.1:44286 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44296
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44296
-[2025-11-15 18:50:52] Request from 127.0.0.1:44296 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:52] accept() ok: 127.0.0.1:44302
-[2025-11-15 18:50:52] process_client: start
-[2025-11-15 18:50:52] Accepted connection from 127.0.0.1:44302
-[2025-11-15 18:50:52] Request from 127.0.0.1:44302 - Request received
-[2025-11-15 18:50:52] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52672
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52672
-[2025-11-15 18:50:57] Request from 127.0.0.1:52672 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52674
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52674
-[2025-11-15 18:50:57] Request from 127.0.0.1:52674 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52682
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52682
-[2025-11-15 18:50:57] Request from 127.0.0.1:52682 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52698
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52698
-[2025-11-15 18:50:57] Request from 127.0.0.1:52698 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52702
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52702
-[2025-11-15 18:50:57] Request from 127.0.0.1:52702 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52716
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52716
-[2025-11-15 18:50:57] Request from 127.0.0.1:52716 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52732
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52732
-[2025-11-15 18:50:57] Request from 127.0.0.1:52732 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52736
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52736
-[2025-11-15 18:50:57] Request from 127.0.0.1:52736 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:50:57] accept() ok: 127.0.0.1:52750
-[2025-11-15 18:50:57] process_client: start
-[2025-11-15 18:50:57] Accepted connection from 127.0.0.1:52750
-[2025-11-15 18:50:57] Request from 127.0.0.1:52750 - Request received
-[2025-11-15 18:50:57] Message type=203 user=
-[2025-11-15 18:51:28] accept() ok: 127.0.0.1:56314
-[2025-11-15 18:51:28] process_client: start
-[2025-11-15 18:51:28] Accepted connection from 127.0.0.1:56314
-[2025-11-15 18:51:28] Request from 127.0.0.1:56314 - Request received
-[2025-11-15 18:51:28] Message type=102 user=
-[2025-11-15 18:51:28] File created
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42176
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42176
-[2025-11-15 18:51:34] Request from 127.0.0.1:42176 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42188
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42188
-[2025-11-15 18:51:34] Request from 127.0.0.1:42188 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42200
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42200
-[2025-11-15 18:51:34] Request from 127.0.0.1:42200 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42206
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42206
-[2025-11-15 18:51:34] Request from 127.0.0.1:42206 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42208
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42208
-[2025-11-15 18:51:34] Request from 127.0.0.1:42208 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42214
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42214
-[2025-11-15 18:51:34] Request from 127.0.0.1:42214 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42220
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42220
-[2025-11-15 18:51:34] Request from 127.0.0.1:42220 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42228
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42228
-[2025-11-15 18:51:34] Request from 127.0.0.1:42228 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42234
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42234
-[2025-11-15 18:51:34] Request from 127.0.0.1:42234 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:34] accept() ok: 127.0.0.1:42240
-[2025-11-15 18:51:34] process_client: start
-[2025-11-15 18:51:34] Accepted connection from 127.0.0.1:42240
-[2025-11-15 18:51:34] Request from 127.0.0.1:42240 - Request received
-[2025-11-15 18:51:34] Message type=203 user=
-[2025-11-15 18:51:37] Warning: File do.sh has unsaved changes for 521 seconds (last modifier: alice)
-[2025-11-15 18:51:37] accept() ok: 127.0.0.1:42246
-[2025-11-15 18:51:37] process_client: start
-[2025-11-15 18:51:37] Accepted connection from 127.0.0.1:42246
-[2025-11-15 18:51:37] Request from 127.0.0.1:42246 - Request received
-[2025-11-15 18:51:37] Message type=203 user=
-[2025-11-15 18:51:51] accept() ok: 127.0.0.1:36570
-[2025-11-15 18:51:51] process_client: start
-[2025-11-15 18:51:51] Accepted connection from 127.0.0.1:36570
-[2025-11-15 18:51:51] Request from 127.0.0.1:36570 - Request received
-[2025-11-15 18:51:51] Message type=105 user=hello
-[2025-11-15 18:51:51] Write request: file=-a, sentence=0, user=hello
-[2025-11-15 18:51:51] Lock acquired on sentence 0 in file -a by user hello
-[2025-11-15 18:51:51] File written
-[2025-11-15 18:51:58] accept() ok: 127.0.0.1:55918
-[2025-11-15 18:51:58] process_client: start
-[2025-11-15 18:51:58] Accepted connection from 127.0.0.1:55918
-[2025-11-15 18:51:58] Request from 127.0.0.1:55918 - Request received
-[2025-11-15 18:51:58] Message type=108 user=hello
-[2025-11-15 18:51:58] File streamed
-[2025-11-15 18:52:10] accept() ok: 127.0.0.1:48690
-[2025-11-15 18:52:10] process_client: start
-[2025-11-15 18:52:10] Accepted connection from 127.0.0.1:48690
-[2025-11-15 18:52:10] Request from 127.0.0.1:48690 - Request received
-[2025-11-15 18:52:10] Message type=103 user=
-[2025-11-15 18:52:10] File deleted
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33348
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33348
-[2025-11-15 18:52:19] Request from 127.0.0.1:33348 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33358
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33358
-[2025-11-15 18:52:19] Request from 127.0.0.1:33358 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33370
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33370
-[2025-11-15 18:52:19] Request from 127.0.0.1:33370 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33378
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33378
-[2025-11-15 18:52:19] Request from 127.0.0.1:33378 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33386
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33386
-[2025-11-15 18:52:19] Request from 127.0.0.1:33386 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33388
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33388
-[2025-11-15 18:52:19] Request from 127.0.0.1:33388 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33392
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33392
-[2025-11-15 18:52:19] Request from 127.0.0.1:33392 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33408
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33408
-[2025-11-15 18:52:19] Request from 127.0.0.1:33408 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:19] accept() ok: 127.0.0.1:33412
-[2025-11-15 18:52:19] process_client: start
-[2025-11-15 18:52:19] Accepted connection from 127.0.0.1:33412
-[2025-11-15 18:52:19] Request from 127.0.0.1:33412 - Request received
-[2025-11-15 18:52:19] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33428
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33428
-[2025-11-15 18:52:22] Request from 127.0.0.1:33428 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33434
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33434
-[2025-11-15 18:52:22] Request from 127.0.0.1:33434 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33436
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33436
-[2025-11-15 18:52:22] Request from 127.0.0.1:33436 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33452
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33452
-[2025-11-15 18:52:22] Request from 127.0.0.1:33452 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33456
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33456
-[2025-11-15 18:52:22] Request from 127.0.0.1:33456 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33472
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33472
-[2025-11-15 18:52:22] Request from 127.0.0.1:33472 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33476
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33476
-[2025-11-15 18:52:22] Request from 127.0.0.1:33476 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33486
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33486
-[2025-11-15 18:52:22] Request from 127.0.0.1:33486 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:22] accept() ok: 127.0.0.1:33496
-[2025-11-15 18:52:22] process_client: start
-[2025-11-15 18:52:22] Accepted connection from 127.0.0.1:33496
-[2025-11-15 18:52:22] Request from 127.0.0.1:33496 - Request received
-[2025-11-15 18:52:22] Message type=203 user=
-[2025-11-15 18:52:37] Warning: File do.sh has unsaved changes for 581 seconds (last modifier: alice)
-[2025-11-15 18:53:37] Warning: File do.sh has unsaved changes for 641 seconds (last modifier: alice)
+[2025-11-17 23:44:09] Registered with name server successfully
+[2025-11-17 23:44:09] Storage Server started on port 9001
+[2025-11-17 23:44:09] Registered with name server successfully
+[2025-11-17 23:44:09] Storage Server started on port 9002
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52802
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52802
+[2025-11-17 23:44:10] Request from 127.0.0.1:52802 - Request received
+[2025-11-17 23:44:10] Message type=102 user=
+[2025-11-17 23:44:10] File created
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52806
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52806
+[2025-11-17 23:44:10] Request from 127.0.0.1:52806 - Request received
+[2025-11-17 23:44:10] Message type=105 user=userA
+[2025-11-17 23:44:10] Write request: file=testfile.txt, sentence=0, user=userA
+[2025-11-17 23:44:10] Lock acquired on sentence 0 in file testfile.txt by user userA
+[2025-11-17 23:44:10] File written
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52814
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52814
+[2025-11-17 23:44:10] Request from 127.0.0.1:52814 - Request received
+[2025-11-17 23:44:10] Message type=104 user=userA
+[2025-11-17 23:44:10] File read
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52828
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52828
+[2025-11-17 23:44:10] Request from 127.0.0.1:52828 - Request received
+[2025-11-17 23:44:10] Message type=203 user=
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52832
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52832
+[2025-11-17 23:44:10] Request from 127.0.0.1:52832 - Request received
+[2025-11-17 23:44:10] Message type=108 user=userA
+[2025-11-17 23:44:10] File streamed
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52838
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52838
+[2025-11-17 23:44:10] Request from 127.0.0.1:52838 - Request received
+[2025-11-17 23:44:10] Message type=113 user=userA
+[2025-11-17 23:44:10] Undo performed
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52842
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52842
+[2025-11-17 23:44:10] Request from 127.0.0.1:52842 - Request received
+[2025-11-17 23:44:10] Message type=104 user=userA
+[2025-11-17 23:44:10] File read
+[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52856
+[2025-11-17 23:44:10] process_client: start
+[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52856
+[2025-11-17 23:44:10] Request from 127.0.0.1:52856 - Request received
+[2025-11-17 23:44:10] Message type=203 user=
+[2025-11-17 23:45:59] Loading file: testfile.txt
+[2025-11-17 23:45:59] Registered with name server successfully
+[2025-11-17 23:46:01] Registered with name server successfully
+[2025-11-17 23:46:02] accept() ok: 127.0.0.1:54564
+[2025-11-17 23:46:02] process_client: start
+[2025-11-17 23:46:02] Accepted connection from 127.0.0.1:54564
+[2025-11-17 23:46:02] Request from 127.0.0.1:54564 - Request received
+[2025-11-17 23:46:02] Message type=204 user=
+[2025-11-17 23:46:02] accept() ok: 127.0.0.1:54374
+[2025-11-17 23:46:02] process_client: start
+[2025-11-17 23:46:02] Accepted connection from 127.0.0.1:54374
+[2025-11-17 23:46:02] Request from 127.0.0.1:54374 - Request received
+[2025-11-17 23:46:02] Message type=204 user=
+[2025-11-17 23:46:20] Loading file: testfile.txt
+[2025-11-17 23:46:20] Registered with name server successfully
+[2025-11-17 23:46:21] Registered with name server successfully
+[2025-11-17 23:46:22] accept() ok: 127.0.0.1:36986
+[2025-11-17 23:46:22] process_client: start
+[2025-11-17 23:46:22] Accepted connection from 127.0.0.1:36986
+[2025-11-17 23:46:22] Request from 127.0.0.1:36986 - Request received
+[2025-11-17 23:46:22] Message type=204 user=
+[2025-11-17 23:46:22] accept() ok: 127.0.0.1:54752
+[2025-11-17 23:46:22] process_client: start
+[2025-11-17 23:46:22] Accepted connection from 127.0.0.1:54752
+[2025-11-17 23:46:22] Request from 127.0.0.1:54752 - Request received
+[2025-11-17 23:46:22] Message type=204 user=

@@ -1,144 +1,132 @@
-[2025-11-15 18:48:46] Name Server started on port 8080
-[2025-11-15 18:49:35] Storage server registered successfully
-[2025-11-15 18:49:35] Request from 127.0.0.1:41664 - Request received
-[2025-11-15 18:49:35] About to send response for op=203, error_code=0, data='OK'
-[2025-11-15 18:49:35] Response sent: error_code=0
-[2025-11-15 18:50:24] Request from 127.0.0.1:54184 - Request received
-[2025-11-15 18:50:24] Client registered successfully
-[2025-11-15 18:50:24] About to send response for op=101, error_code=0, data='Registration successful'
-[2025-11-15 18:50:24] Response sent: error_code=0
-[2025-11-15 18:50:50] Request from 127.0.0.1:56118 - Request received
-[2025-11-15 18:50:50] About to send response for op=106, error_code=0, data='Accessible files with details:
+[2025-11-17 23:44:08] Name Server started on port 8000
+[2025-11-17 23:44:09] Storage server registered successfully
+[2025-11-17 23:44:09] Request from 127.0.0.1:46564 - Request received
+[2025-11-17 23:44:09] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:44:09] Response sent: error_code=0
+[2025-11-17 23:44:09] Storage server registered successfully
+[2025-11-17 23:44:09] Request from 127.0.0.1:46580 - Request received
+[2025-11-17 23:44:09] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:44:09] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46588 - Request received
+[2025-11-17 23:44:10] Client registered successfully
+[2025-11-17 23:44:10] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46590 - Request received
+[2025-11-17 23:44:10] About to send response for op=102, error_code=0, data='Created'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46602 - Request received
+[2025-11-17 23:44:10] Forwarding op 105 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46618 - Request received
+[2025-11-17 23:44:10] Forwarding op 104 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46620 - Request received
+[2025-11-17 23:44:10] About to send response for op=107, error_code=0, data='File: testfile.txt
+Owner: userA
+Created: 2025-11-17 23:44:10
+Last Modified: 2025-11-17 23:44:10
+Size: 12 bytes
+Last Accessed: 2025-11-17 23:44:10 by userA
+Access: userA (RW)'
+[2025-11-17 23:44:10] Request from 127.0.0.1:46624 - Request received
+[2025-11-17 23:44:10] Forwarding op 108 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46626 - Request received
+[2025-11-17 23:44:10] Forwarding op 113 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] About to send response for op=113, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46634 - Request received
+[2025-11-17 23:44:10] Forwarding op 104 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46636 - Request received
+[2025-11-17 23:44:10] About to send response for op=106, error_code=0, data='All files with details:
 ---------------------------------------------------------
 |  Filename  | Words | Chars | Last Access Time | Owner |
 |------------|-------|-------|------------------|-------|
+| y.txt      |     0 |     0 | 2025-11-17 23:44:10 |       |
+| exec.txt   |     0 |     0 | 2025-11-17 23:44:10 |       |
+| sptest.txt |     0 |     0 | 2025-11-17 23:44:10 |       |
+| z.txt      |     0 |     0 | 2025-11-17 23:44:10 |       |
+| t.txt      |     0 |     0 | 2025-11-17 23:44:10 |       |
+| acl.txt    |     0 |     0 | 2025-11-17 23:44:10 |       |
+| mouse.txt  |     0 |     0 | 2025-11-17 23:44:10 |       |
+| f2.txt     |     0 |     0 | 2025-11-17 23:44:10 |       |
+| persist.txt |     0 |     0 | 2025-11-17 23:44:10 | alice |
+| do.sh      |     0 |     0 | 2025-11-17 23:44:10 | alice |
+| testfile.txt |     0 |     0 | 2025-11-17 23:44:10 | userA |
 ---------------------------------------------------------
 '
-[2025-11-15 18:50:50] Response sent: error_code=0
-[2025-11-15 18:50:52] Request from 127.0.0.1:56128 - Request received
-[2025-11-15 18:50:52] About to send response for op=106, error_code=0, data='--> y.txt
---> exec.txt
---> sptest.txt
---> z.txt
---> t.txt
---> acl.txt
---> mouse.txt
---> f2.txt
---> persist.txt
---> do.sh
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46640 - Request received
+[2025-11-17 23:44:10] Client registered successfully
+[2025-11-17 23:44:10] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46644 - Request received
+[2025-11-17 23:44:10] About to send response for op=106, error_code=0, data=''
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:44:10] Request from 127.0.0.1:46648 - Request received
+[2025-11-17 23:44:10] About to send response for op=109, error_code=0, data='Users:
+--> userA
+--> userB
 '
-[2025-11-15 18:50:52] Response sent: error_code=0
-[2025-11-15 18:50:57] Request from 127.0.0.1:33708 - Request received
-[2025-11-15 18:50:57] About to send response for op=106, error_code=0, data='All files with details:
----------------------------------------------------------
-|  Filename  | Words | Chars | Last Access Time | Owner |
-|------------|-------|-------|------------------|-------|
-| y.txt      |     0 |     0 | 2025-11-15 18:50:57 |       |
-| exec.txt   |     3 |    18 | 2025-11-15 18:50:57 |       |
-| sptest.txt |     9 |    41 | 2025-11-15 18:50:57 |       |
-| z.txt      |     0 |     0 | 2025-11-15 18:50:57 |       |
-| t.txt      |     0 |     0 | 2025-11-15 18:50:57 |       |
-| acl.txt    |     0 |     0 | 2025-11-15 18:50:57 |       |
-| mouse.txt  |     0 |     0 | 2025-11-15 18:50:57 |       |
-| f2.txt     |     4 |    18 | 2025-11-15 18:50:57 |       |
-| persist.txt |     8 |    32 | 2025-11-15 18:50:57 | alice |
-| do.sh      |     0 |     0 | 2025-11-15 18:50:57 | alice |
----------------------------------------------------------
+[2025-11-17 23:44:10] Response sent: error_code=0
+[2025-11-17 23:45:58] Name Server started on port 9000
+[2025-11-17 23:45:59] Storage server registered successfully
+[2025-11-17 23:45:59] Request from 127.0.0.1:36776 - Request received
+[2025-11-17 23:45:59] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:45:59] Response sent: error_code=0
+[2025-11-17 23:46:01] Storage server registered successfully
+[2025-11-17 23:46:01] Request from 127.0.0.1:36784 - Request received
+[2025-11-17 23:46:01] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:46:01] Response sent: error_code=0
+[2025-11-17 23:46:02] Request from 127.0.0.1:36786 - Request received
+[2025-11-17 23:46:02] Client registered successfully
+[2025-11-17 23:46:02] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-17 23:46:02] Response sent: error_code=0
+[2025-11-17 23:46:02] Request from 127.0.0.1:36796 - Request received
+[2025-11-17 23:46:02] About to send response for op=204, error_code=0, data='Rescan completed
+LIST 1
+testfile.txt
+
+LIST 0
+
 '
-[2025-11-15 18:50:57] Response sent: error_code=0
-[2025-11-15 18:51:05] Request from 127.0.0.1:48746 - Request received
-[2025-11-15 18:51:05] About to send response for op=103, error_code=2, data='Write permission required'
-[2025-11-15 18:51:05] Response sent: error_code=2
-[2025-11-15 18:51:22] Request from 127.0.0.1:49426 - Request received
-[2025-11-15 18:51:22] Client registered successfully
-[2025-11-15 18:51:22] About to send response for op=101, error_code=0, data='Registration successful'
-[2025-11-15 18:51:22] Response sent: error_code=0
-[2025-11-15 18:51:28] Request from 127.0.0.1:53724 - Request received
-[2025-11-15 18:51:28] About to send response for op=102, error_code=0, data='Created'
-[2025-11-15 18:51:28] Response sent: error_code=0
-[2025-11-15 18:51:34] Request from 127.0.0.1:33290 - Request received
-[2025-11-15 18:51:34] About to send response for op=106, error_code=0, data='--> y.txt
---> exec.txt
---> sptest.txt
---> z.txt
---> t.txt
---> acl.txt
---> mouse.txt
---> f2.txt
---> persist.txt
---> do.sh
---> -a
+[2025-11-17 23:46:02] Response sent: error_code=0
+[2025-11-17 23:46:02] Request from 127.0.0.1:36810 - Request received
+[2025-11-17 23:46:02] About to send response for op=106, error_code=0, data=''
+[2025-11-17 23:46:02] Response sent: error_code=0
+[2025-11-17 23:46:19] Name Server started on port 9000
+[2025-11-17 23:46:20] Storage server registered successfully
+[2025-11-17 23:46:20] Request from 127.0.0.1:33732 - Request received
+[2025-11-17 23:46:20] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:46:20] Response sent: error_code=0
+[2025-11-17 23:46:21] Storage server registered successfully
+[2025-11-17 23:46:21] Request from 127.0.0.1:33738 - Request received
+[2025-11-17 23:46:21] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:46:21] Response sent: error_code=0
+[2025-11-17 23:46:22] Request from 127.0.0.1:33754 - Request received
+[2025-11-17 23:46:22] Client registered successfully
+[2025-11-17 23:46:22] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-17 23:46:22] Response sent: error_code=0
+[2025-11-17 23:46:22] Request from 127.0.0.1:33760 - Request received
+[2025-11-17 23:46:22] About to send response for op=204, error_code=0, data='Rescan completed
+LIST 1
+testfile.txt
+
+LIST 0
+
 '
-[2025-11-15 18:51:34] Response sent: error_code=0
-[2025-11-15 18:51:37] Request from 127.0.0.1:33292 - Request received
-[2025-11-15 18:51:37] About to send response for op=106, error_code=0, data='Accessible files with details:
----------------------------------------------------------
-|  Filename  | Words | Chars | Last Access Time | Owner |
-|------------|-------|-------|------------------|-------|
-| -a         |     0 |     0 | 2025-11-15 18:51:28 | hello |
----------------------------------------------------------
-'
-[2025-11-15 18:51:37] Response sent: error_code=0
-[2025-11-15 18:51:51] Request from 127.0.0.1:57796 - Request received
-[2025-11-15 18:51:51] Forwarding op 105 for file '-a' from user 'hello'
-[2025-11-15 18:51:51] Selected SS 127.0.0.1:9090 for file '-a'
-[2025-11-15 18:51:51] About to send response for op=105, error_code=0, data='127.0.0.1 9090'
-[2025-11-15 18:51:51] Response sent: error_code=0
-[2025-11-15 18:51:58] Request from 127.0.0.1:40366 - Request received
-[2025-11-15 18:51:58] Forwarding op 108 for file '-a' from user 'hello'
-[2025-11-15 18:51:58] Selected SS 127.0.0.1:9090 for file '-a'
-[2025-11-15 18:51:58] About to send response for op=108, error_code=0, data='127.0.0.1 9090'
-[2025-11-15 18:51:58] Response sent: error_code=0
-[2025-11-15 18:52:10] Request from 127.0.0.1:50420 - Request received
-[2025-11-15 18:52:10] About to send response for op=103, error_code=0, data='Deleted'
-[2025-11-15 18:52:10] Response sent: error_code=0
-[2025-11-15 18:52:14] Request from 127.0.0.1:44150 - Request received
-[2025-11-15 18:52:14] About to send response for op=106, error_code=0, data=''
-[2025-11-15 18:52:14] Response sent: error_code=0
-[2025-11-15 18:52:17] Request from 127.0.0.1:44164 - Request received
-[2025-11-15 18:52:17] About to send response for op=106, error_code=0, data='Accessible files with details:
----------------------------------------------------------
-|  Filename  | Words | Chars | Last Access Time | Owner |
-|------------|-------|-------|------------------|-------|
----------------------------------------------------------
-'
-[2025-11-15 18:52:17] Response sent: error_code=0
-[2025-11-15 18:52:19] Request from 127.0.0.1:44166 - Request received
-[2025-11-15 18:52:19] About to send response for op=106, error_code=0, data='--> y.txt
---> exec.txt
---> sptest.txt
---> z.txt
---> t.txt
---> acl.txt
---> mouse.txt
---> f2.txt
---> persist.txt
---> do.sh
-'
-[2025-11-15 18:52:19] Response sent: error_code=0
-[2025-11-15 18:52:22] Request from 127.0.0.1:44180 - Request received
-[2025-11-15 18:52:22] About to send response for op=106, error_code=0, data='All files with details:
----------------------------------------------------------
-|  Filename  | Words | Chars | Last Access Time | Owner |
-|------------|-------|-------|------------------|-------|
-| y.txt      |     0 |     0 | 2025-11-15 18:52:22 |       |
-| exec.txt   |     3 |    18 | 2025-11-15 18:52:22 |       |
-| sptest.txt |     9 |    41 | 2025-11-15 18:52:22 |       |
-| z.txt      |     0 |     0 | 2025-11-15 18:52:22 |       |
-| t.txt      |     0 |     0 | 2025-11-15 18:52:22 |       |
-| acl.txt    |     0 |     0 | 2025-11-15 18:52:22 |       |
-| mouse.txt  |     0 |     0 | 2025-11-15 18:52:22 |       |
-| f2.txt     |     4 |    18 | 2025-11-15 18:52:22 |       |
-| persist.txt |     8 |    32 | 2025-11-15 18:52:22 | alice |
-| do.sh      |     0 |     0 | 2025-11-15 18:52:22 | alice |
----------------------------------------------------------
-'
-[2025-11-15 18:52:22] Response sent: error_code=0
-[2025-11-15 18:52:25] Request from 127.0.0.1:52010 - Request received
-[2025-11-15 18:52:25] Forwarding op 113 for file '-a' from user 'hello'
-[2025-11-15 18:52:25] About to send response for op=113, error_code=1, data='File not found'
-[2025-11-15 18:52:25] Response sent: error_code=1
-[2025-11-15 18:52:32] Request from 127.0.0.1:52022 - Request received
-[2025-11-15 18:52:32] Forwarding op 113 for file 'exec.txt' from user 'hello'
-[2025-11-15 18:52:32] About to send response for op=113, error_code=2, data='Write permission required'
-[2025-11-15 18:52:32] Response sent: error_code=2
+[2025-11-17 23:46:22] Response sent: error_code=0
+[2025-11-17 23:46:22] Request from 127.0.0.1:33770 - Request received
+[2025-11-17 23:46:22] About to send response for op=106, error_code=0, data=''
+[2025-11-17 23:46:22] Response sent: error_code=0

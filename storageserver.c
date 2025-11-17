@@ -410,6 +410,64 @@ void load_file(const char *filename) {
     fclose(fp);
 }
 
+// Rescan the storage directory: remove in-memory files that no longer exist
+// and load new files from disk. Returns number of files after rescan or -1 on error
+int rescan_storage() {
+    DIR *dir = opendir(storage_path);
+    if (!dir) return -1;
+
+    // Build list of files on disk
+    char disk_files[MAX_FILES][MAX_FILENAME];
+    int disk_count = 0;
+    struct dirent *entry;
+    while ((entry = readdir(dir)) != NULL && disk_count < MAX_FILES) {
+        if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0) continue;
+        if (strstr(entry->d_name, ".tmp") || strstr(entry->d_name, ".bak") || strstr(entry->d_name, ".recovery")) continue;
+        strncpy(disk_files[disk_count++], entry->d_name, MAX_FILENAME - 1);
+    }
+    closedir(dir);
+
+    pthread_mutex_lock(&files_mutex);
+
+    // Remove in-memory files that are no longer present on disk
+    for (int i = 0; i < num_files; ) {
+        int found = 0;
+        for (int j = 0; j < disk_count; j++) {
+            if (strcmp(files[i].filename, disk_files[j]) == 0) { found = 1; break; }
+        }
+        if (!found) {
+            // destroy locks and shift array
+            if (files[i].sentence_locks) {
+                for (int k = 0; k < files[i].locks_capacity; k++) {
+                    pthread_mutex_destroy(&files[i].sentence_locks[k].mutex);
+                    pthread_cond_destroy(&files[i].sentence_locks[k].cond);
+                }
+                free(files[i].sentence_locks);
+            }
+            pthread_mutex_destroy(&files[i].lock);
+            for (int k = i; k < num_files - 1; k++) files[k] = files[k+1];
+            num_files--;
+        } else {
+            i++;
+        }
+    }
+
+    // Load files that exist on disk but are not in memory
+    for (int i = 0; i < disk_count; i++) {
+        int present = 0;
+        for (int j = 0; j < num_files; j++) {
+            if (strcmp(files[j].filename, disk_files[i]) == 0) { present = 1; break; }
+        }
+        if (!present) {
+            load_file(disk_files[i]);
+        }
+    }
+
+    int final_count = num_files;
+    pthread_mutex_unlock(&files_mutex);
+    return final_count;
+}
+
 int save_file(FileData *file) {
     char filepath[MAX_PATH];
     char temp_path[MAX_PATH];
@@ -1205,6 +1263,27 @@ static void process_client(int client_sock) {
                 snprintf(response.data, MAX_BUFFER, "%d %d %ld %ld %ld %ld %s",
                          file->word_count, file->char_count, size,
                          (long)last_acc, (long)last_mod, (long)created, last_reader[0] ? last_reader : "-");
+            }
+            break;
+        }
+
+        case MSG_SS_RESCAN: {
+            // Re-scan storage directory and return current file list in same format as initial LIST
+            int cnt = rescan_storage();
+            if (cnt < 0) {
+                response.error_code = ERR_INTERNAL_ERROR;
+                snprintf(response.data, MAX_BUFFER, "Rescan failed");
+            } else {
+                char payload[MAX_BUFFER];
+                int off = snprintf(payload, sizeof(payload), "LIST %d\n", cnt);
+                pthread_mutex_lock(&files_mutex);
+                for (int i = 0; i < num_files && off < (int)sizeof(payload) - 2; i++) {
+                    int n = snprintf(payload + off, sizeof(payload) - off, "%s\n", files[i].filename);
+                    if (n < 0) break; off += n;
+                }
+                pthread_mutex_unlock(&files_mutex);
+                strncpy(response.data, payload, MAX_BUFFER - 1);
+                response.error_code = ERR_SUCCESS;
             }
             break;
         }

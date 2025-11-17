@@ -75,6 +75,8 @@
 #define MSG_ERROR 201
 #define MSG_ACK 202
 #define MSG_SS_INFO 203
+// Request SS to rescan its storage directory and return current file list
+#define MSG_SS_RESCAN 204
 
 // File Access Rights
 #define ACCESS_NONE 0

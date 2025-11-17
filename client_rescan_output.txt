@@ -1,0 +1,10 @@
+Enter username: Welcome tester! Type 'help' for commands.
+
+> Rescan completed
+LIST 1
+testfile.txt
+
+LIST 0
+
+
+> > 

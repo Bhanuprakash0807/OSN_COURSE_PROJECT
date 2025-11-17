@@ -751,6 +751,28 @@ int main(int argc, char *argv[]) {
             char *filename = strtok(NULL, " ");
             if (filename) handle_exec(filename);
             else printf("ERROR: Missing filename\n");
+        } else if (strcmp(cmd, "RESCAN") == 0) {
+            char *target = strtok(NULL, " ");
+            if (!target) {
+                printf("ERROR: Missing target (ip or ALL)\n");
+            } else {
+                int sock = connect_to_nm();
+                if (sock < 0) { printf("ERROR: Failed to connect to name server\n"); }
+                else {
+                    Message msg, response; memset(&msg,0,sizeof(msg));
+                    msg.msg_type = MSG_SS_RESCAN;
+                    strncpy(msg.username, username, MAX_USERNAME - 1);
+                    strncpy(msg.data, target, MAX_BUFFER - 1);
+                    send_message(sock, &msg);
+                    if (receive_message(sock, &response) < 0) {
+                        printf("ERROR: Failed to receive response from name server\n");
+                    } else {
+                        if (response.error_code == ERR_SUCCESS) printf("%s\n", response.data);
+                        else printf("ERROR: %s\n", response.data);
+                    }
+                    close(sock);
+                }
+            }
         } else if (strcmp(cmd, "exit") == 0 || strcmp(cmd, "quit") == 0) {
             break;
         } else if (strcmp(cmd, "help") == 0) {
@@ -767,6 +789,7 @@ int main(int argc, char *argv[]) {
             printf("  ADDACCESS -R/-W <file> <user> - Add access\n");
             printf("  REMACCESS <file> <user> - Remove access\n");
             printf("  EXEC <file>           - Execute file\n");
+            printf("  RESCAN <ip|ALL>       - Ask NM to request SS to rescan storage (ip or ALL)\n");
             printf("  exit/quit             - Exit\n");
         } else {
             printf("ERROR: Unknown command. Type 'help' for commands.\n");

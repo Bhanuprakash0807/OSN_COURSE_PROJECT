@@ -1,0 +1,82 @@
+[2025-11-17 23:44:08] [NM] Name Server started on port 8000
+[2025-11-17 23:44:09] [NM] Storage server registered successfully
+[2025-11-17 23:44:09] [NM] Request from 127.0.0.1:46564 - Request received
+[2025-11-17 23:44:09] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:44:09] [NM] Response sent: error_code=0
+[2025-11-17 23:44:09] [NM] Storage server registered successfully
+[2025-11-17 23:44:09] [NM] Request from 127.0.0.1:46580 - Request received
+[2025-11-17 23:44:09] [NM] About to send response for op=203, error_code=0, data='OK'
+[2025-11-17 23:44:09] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46588 - Request received
+[2025-11-17 23:44:10] [NM] Client registered successfully
+[2025-11-17 23:44:10] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46590 - Request received
+[2025-11-17 23:44:10] [NM] About to send response for op=102, error_code=0, data='Created'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46602 - Request received
+[2025-11-17 23:44:10] [NM] Forwarding op 105 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] [NM] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] [NM] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46618 - Request received
+[2025-11-17 23:44:10] [NM] Forwarding op 104 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] [NM] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] [NM] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46620 - Request received
+[2025-11-17 23:44:10] [NM] About to send response for op=107, error_code=0, data='File: testfile.txt
+Owner: userA
+Created: 2025-11-17 23:44:10
+Last Modified: 2025-11-17 23:44:10
+Size: 12 bytes
+Last Accessed: 2025-11-17 23:44:10 by userA
+Access: userA (RW)'
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46624 - Request received
+[2025-11-17 23:44:10] [NM] Forwarding op 108 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] [NM] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] [NM] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46626 - Request received
+[2025-11-17 23:44:10] [NM] Forwarding op 113 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] [NM] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] [NM] About to send response for op=113, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46634 - Request received
+[2025-11-17 23:44:10] [NM] Forwarding op 104 for file 'testfile.txt' from user 'userA'
+[2025-11-17 23:44:10] [NM] Selected SS 127.0.0.1:9001 for file 'testfile.txt'
+[2025-11-17 23:44:10] [NM] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46636 - Request received
+[2025-11-17 23:44:10] [NM] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| y.txt      |     0 |     0 | 2025-11-17 23:44:10 |       |
+| exec.txt   |     0 |     0 | 2025-11-17 23:44:10 |       |
+| sptest.txt |     0 |     0 | 2025-11-17 23:44:10 |       |
+| z.txt      |     0 |     0 | 2025-11-17 23:44:10 |       |
+| t.txt      |     0 |     0 | 2025-11-17 23:44:10 |       |
+| acl.txt    |     0 |     0 | 2025-11-17 23:44:10 |       |
+| mouse.txt  |     0 |     0 | 2025-11-17 23:44:10 |       |
+| f2.txt     |     0 |     0 | 2025-11-17 23:44:10 |       |
+| persist.txt |     0 |     0 | 2025-11-17 23:44:10 | alice |
+| do.sh      |     0 |     0 | 2025-11-17 23:44:10 | alice |
+| testfile.txt |     0 |     0 | 2025-11-17 23:44:10 | userA |
+---------------------------------------------------------
+'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46640 - Request received
+[2025-11-17 23:44:10] [NM] Client registered successfully
+[2025-11-17 23:44:10] [NM] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46644 - Request received
+[2025-11-17 23:44:10] [NM] About to send response for op=106, error_code=0, data=''
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0
+[2025-11-17 23:44:10] [NM] Request from 127.0.0.1:46648 - Request received
+[2025-11-17 23:44:10] [NM] About to send response for op=109, error_code=0, data='Users:
+--> userA
+--> userB
+'
+[2025-11-17 23:44:10] [NM] Response sent: error_code=0

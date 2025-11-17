@@ -1,0 +1,80 @@
+[2025-11-17 23:44:09] [SS] Registered with name server successfully
+[2025-11-17 23:44:09] [SS] Storage Server started on port 9001
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52802
+[SS-DBG] about to process_client ptr=0x641dae3ee6b0 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52802
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52802 - Request received
+[2025-11-17 23:44:10] [SS] Message type=102 user=
+[2025-11-17 23:44:10] [SS] File created
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52806
+[SS-DBG] about to process_client ptr=0x641dae3ee6b0 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52806
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52806 - Request received
+[2025-11-17 23:44:10] [SS] Message type=105 user=userA
+[2025-11-17 23:44:10] [SS] Write request: file=testfile.txt, sentence=0, user=userA
+[2025-11-17 23:44:10] [SS] Lock acquired on sentence 0 in file testfile.txt by user userA
+[2025-11-17 23:44:10] [SS] File written
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52814
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52814
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52814 - Request received
+[2025-11-17 23:44:10] [SS] Message type=104 user=userA
+[2025-11-17 23:44:10] [SS] File read
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52828
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52828
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52828 - Request received
+[2025-11-17 23:44:10] [SS] Message type=203 user=
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52832
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52832
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52832 - Request received
+[2025-11-17 23:44:10] [SS] Message type=108 user=userA
+[2025-11-17 23:44:10] [SS] File streamed
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52838
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52838
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52838 - Request received
+[2025-11-17 23:44:10] [SS] Message type=113 user=userA
+[2025-11-17 23:44:10] [SS] Undo performed
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52842
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52842
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52842 - Request received
+[2025-11-17 23:44:10] [SS] Message type=104 user=userA
+[2025-11-17 23:44:10] [SS] File read
+[2025-11-17 23:44:10] [SS] accept() ok: 127.0.0.1:52856
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:44:10] [SS] process_client: start
+[2025-11-17 23:44:10] [SS] Accepted connection from 127.0.0.1:52856
+[2025-11-17 23:44:10] [SS] Request from 127.0.0.1:52856 - Request received
+[2025-11-17 23:44:10] [SS] Message type=203 user=
+[2025-11-17 23:46:02] [SS] accept() ok: 127.0.0.1:54564
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:46:02] [SS] process_client: start
+[2025-11-17 23:46:02] [SS] Accepted connection from 127.0.0.1:54564
+[2025-11-17 23:46:02] [SS] Request from 127.0.0.1:54564 - Request received
+[2025-11-17 23:46:02] [SS] Message type=204 user=
+[2025-11-17 23:46:22] [SS] accept() ok: 127.0.0.1:36986
+[SS-DBG] about to process_client ptr=0x641dae3ee810 fd=4
+[SS-DBG] process_client: start fd=4
+[2025-11-17 23:46:22] [SS] process_client: start
+[2025-11-17 23:46:22] [SS] Accepted connection from 127.0.0.1:36986
+[2025-11-17 23:46:22] [SS] Request from 127.0.0.1:36986 - Request received
+[2025-11-17 23:46:22] [SS] Message type=204 user=

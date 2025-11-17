@@ -575,6 +575,87 @@ void* handle_client(void *arg) {
                 }
                 break;
             }
+
+            case MSG_SS_RESCAN: {
+                // Client requested NM to ask SS(s) to rescan their storage directories.
+                // msg.data can be an IP to rescan a specific SS, or "ALL"/empty to rescan all.
+                char target[MAX_BUFFER];
+                strncpy(target, msg.data, sizeof(target)-1);
+                target[sizeof(target)-1] = '\0';
+
+                int rescan_success = 0;
+                char aggregated[MAX_BUFFER];
+                aggregated[0] = '\0';
+
+                pthread_mutex_lock(&ss_mutex);
+                for (int i = 0; i < num_ss; i++) {
+                    if (!storage_servers[i].is_active) continue;
+                    if (strlen(target) > 0 && strcmp(target, "ALL") != 0) {
+                        if (strcmp(storage_servers[i].ip, target) != 0) continue;
+                    }
+
+                    Message ss_resp;
+                    int rc = ss_simple_request(i, MSG_SS_RESCAN, "", &ss_resp);
+                    if (rc == ERR_SUCCESS) {
+                        // Parse LIST payload and update NM registry similar to MSG_SS_INFO
+                        int n = 0;
+                        if (sscanf(ss_resp.data, "LIST %d", &n) == 1 && n >= 0) {
+                            char *p = strchr(ss_resp.data, '\n');
+                            for (int j = 0; j < n && p; j++) {
+                                p++; if (!*p) break;
+                                char fname[MAX_FILENAME]; int len = 0;
+                                while (p[len] && p[len] != '\n' && len < MAX_FILENAME-1) len++;
+                                memcpy(fname, p, len); fname[len] = '\0';
+                                if (len > 0) {
+                                    pthread_mutex_lock(&file_mutex);
+                                    int found_index = -1;
+                                    for (int k = 0; k < num_files; k++) {
+                                        if (strcmp(files[k].metadata.filename, fname) == 0) { found_index = k; break; }
+                                    }
+                                    if (found_index >= 0) {
+                                        files[found_index].ss_index = i;
+                                    } else if (num_files < MAX_FILES) {
+                                        strncpy(files[num_files].metadata.filename, fname, MAX_FILENAME - 1);
+                                        files[num_files].metadata.owner[0] = '\0';
+                                        files[num_files].metadata.created_time = time(NULL);
+                                        files[num_files].metadata.modified_time = time(NULL);
+                                        files[num_files].metadata.accessed_time = time(NULL);
+                                        files[num_files].metadata.size = 0;
+                                        files[num_files].metadata.word_count = 0;
+                                        files[num_files].metadata.char_count = 0;
+                                        files[num_files].metadata.num_users = 0;
+                                        files[num_files].ss_index = i;
+                                        num_files++;
+                                    }
+                                    pthread_mutex_unlock(&file_mutex);
+                                    pthread_mutex_lock(&trie_mutex);
+                                    trie_insert(file_trie_root, fname, i);
+                                    pthread_mutex_unlock(&trie_mutex);
+                                }
+                                p = strchr(p, '\n');
+                            }
+                            rescan_success = 1;
+                        }
+                    }
+                    // aggregate response messages
+                    if (ss_resp.data[0]) {
+                        strncat(aggregated, ss_resp.data, sizeof(aggregated) - strlen(aggregated) - 1);
+                        strncat(aggregated, "\n", sizeof(aggregated) - strlen(aggregated) - 1);
+                    }
+                    if (strlen(target) > 0 && strcmp(target, "ALL") != 0 && strcmp(storage_servers[i].ip, target) == 0) break;
+                }
+                pthread_mutex_unlock(&ss_mutex);
+
+                if (rescan_success) {
+                    save_metadata();
+                    response.error_code = ERR_SUCCESS;
+                    snprintf(response.data, MAX_BUFFER, "Rescan completed\n%s", aggregated);
+                } else {
+                    response.error_code = ERR_INTERNAL_ERROR;
+                    snprintf(response.data, MAX_BUFFER, "Rescan failed or no matching storage servers");
+                }
+                break;
+            }
             
             case MSG_VIEW_FILES: {
                 char result[MAX_BUFFER] = "";
@@ -1121,6 +1202,18 @@ int main(int argc, char *argv[]) {
 
     // Load persisted metadata (owner/ACL) before SS reconciliation
     load_metadata();
+    // Mark persisted entries as unverified: don't expose files until an SS confirms
+    // This avoids showing stale files that may have been removed from storage
+    pthread_mutex_lock(&file_mutex);
+    for (int i = 0; i < num_files; i++) {
+        files[i].ss_index = -1; // unknown until SS reports
+        // remove from trie so lookups won't return stale locations
+        pthread_mutex_lock(&trie_mutex);
+        trie_delete(file_trie_root, files[i].metadata.filename);
+        pthread_mutex_unlock(&trie_mutex);
+    }
+    pthread_mutex_unlock(&file_mutex);
+    cache_clear();
     
     int server_sock = socket(AF_INET, SOCK_STREAM, 0);
     if (server_sock < 0) {
