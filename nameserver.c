@@ -706,6 +706,9 @@ void* handle_client(void *arg) {
                             }
                         }
                         pthread_mutex_unlock(&file_mutex);
+                        // Persist metadata after removing an entry so NM's metadata file
+                        // stays in sync with the in-memory registry.
+                        save_metadata();
                         continue;
                     }
                     if (show_details) {
@@ -791,6 +794,9 @@ void* handle_client(void *arg) {
                         trie_delete(file_trie_root, file->metadata.filename);
                         pthread_mutex_unlock(&trie_mutex);
                         cache_clear();
+                        // Persist the removal so metadata file no longer references
+                        // the deleted file.
+                        save_metadata();
                         response.error_code = ERR_FILE_NOT_FOUND;
                         snprintf(response.data, MAX_BUFFER, "File not found");
                         break;
@@ -869,7 +875,7 @@ void* handle_client(void *arg) {
             }
             
             case MSG_REM_ACCESS: {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 char *saveptr;
+                char *saveptr;
                 char *filename = strtok_r(msg.data, " ", &saveptr);
                 char *target_user = strtok_r(NULL, " ", &saveptr);
                 

@@ -76,3 +76,7 @@
 [2025-11-17 23:46:22] Accepted connection from 127.0.0.1:54752
 [2025-11-17 23:46:22] Request from 127.0.0.1:54752 - Request received
 [2025-11-17 23:46:22] Message type=204 user=
+[2025-11-18 00:18:42] Loading file: testfile.txt
+[2025-11-18 00:18:42] Registered with name server successfully
+[2025-11-18 00:18:42] Storage Server started on port 9900
+[2025-11-18 00:18:59] Cleanup handler called

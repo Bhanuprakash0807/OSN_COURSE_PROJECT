@@ -130,3 +130,8 @@ LIST 0
 [2025-11-17 23:46:22] Request from 127.0.0.1:33770 - Request received
 [2025-11-17 23:46:22] About to send response for op=106, error_code=0, data=''
 [2025-11-17 23:46:22] Response sent: error_code=0
+[2025-11-18 00:18:01] Name Server started on port 8080
+[2025-11-18 00:18:42] Storage server registered successfully
+[2025-11-18 00:18:42] Request from 127.0.0.1:53674 - Request received
+[2025-11-18 00:18:42] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 00:18:42] Response sent: error_code=0
