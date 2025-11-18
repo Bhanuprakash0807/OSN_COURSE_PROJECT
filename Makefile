@@ -1,32 +1,43 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -pthread -g
-LDFLAGS = -pthread
+CC := gcc
+CFLAGS := -Wall -Wextra -g -I.
+LDFLAGS := -pthread
 
-# Targets
-all: nameserver storageserver client
+# Directories
+CLIENT_DIR := client-files
+SERVER_DIR := server-files
+STORAGE_DIR := storage-files
 
-nameserver: nameserver.o common.o
-	$(CC) $(LDFLAGS) -o nameserver nameserver.o common.o
+# Source lists
+CLIENT_SRCS := $(wildcard $(CLIENT_DIR)/*.c)
+SERVER_SRCS := $(wildcard $(SERVER_DIR)/*.c)
+STORAGE_SRCS := $(wildcard $(STORAGE_DIR)/*.c)
 
-storageserver: storageserver.o common.o
-	$(CC) $(LDFLAGS) -o storageserver storageserver.o common.o
+CLIENT_OBJS := $(patsubst %.c,%.o,$(CLIENT_SRCS))
+SERVER_OBJS := $(patsubst %.c,%.o,$(SERVER_SRCS))
+STORAGE_OBJS := $(patsubst %.c,%.o,$(STORAGE_SRCS))
 
-client: client.o common.o
-	$(CC) $(LDFLAGS) -o client client.o common.o
+COMMON_OBJS := common.o
 
-nameserver.o: nameserver.c common.h
-	$(CC) $(CFLAGS) -c nameserver.c
-
-storageserver.o: storageserver.c common.h
-	$(CC) $(CFLAGS) -c storageserver.c
-
-client.o: client.c common.h
-	$(CC) $(CFLAGS) -c client.c
-
-common.o: common.c common.h
-	$(CC) $(CFLAGS) -c common.c
-
-clean:
-	rm -f *.o nameserver storageserver client *.log
+BINS := nameserver storageserver client
 
 .PHONY: all clean
+
+all: $(BINS)
+
+nameserver: $(SERVER_OBJS) $(COMMON_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(SERVER_OBJS) $(COMMON_OBJS)
+
+storageserver: $(STORAGE_OBJS) $(COMMON_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(STORAGE_OBJS) $(COMMON_OBJS)
+
+client: $(CLIENT_OBJS) $(COMMON_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(CLIENT_OBJS) $(COMMON_OBJS)
+
+# Generic rule to build .o from .c (preserves directory structure)
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(CLIENT_OBJS) $(SERVER_OBJS) $(STORAGE_OBJS) $(COMMON_OBJS) $(BINS)
+
+# End of Makefile

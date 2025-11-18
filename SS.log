@@ -1,76 +1,13 @@
-[2025-11-18 13:14:08] Loading file: testfile.txt
-[2025-11-18 13:14:08] Registered with name server successfully
-[2025-11-18 13:14:08] Storage Server started on port 9001
-[2025-11-18 13:14:19] accept() ok: 127.0.0.1:52096
-[2025-11-18 13:14:19] process_client: start
-[2025-11-18 13:14:19] Accepted connection from 127.0.0.1:52096
-[2025-11-18 13:14:19] Request from 127.0.0.1:52096 - Request received
-[2025-11-18 13:14:19] Message type=203 user=
-[2025-11-18 13:14:36] accept() ok: 127.0.0.1:37232
-[2025-11-18 13:14:36] process_client: start
-[2025-11-18 13:14:36] Accepted connection from 127.0.0.1:37232
-[2025-11-18 13:14:36] Request from 127.0.0.1:37232 - Request received
-[2025-11-18 13:14:36] Message type=102 user=
-[2025-11-18 13:14:36] File created
-[2025-11-18 13:15:03] accept() ok: 127.0.0.1:47102
-[2025-11-18 13:15:03] process_client: start
-[2025-11-18 13:15:03] Accepted connection from 127.0.0.1:47102
-[2025-11-18 13:15:03] Request from 127.0.0.1:47102 - Request received
-[2025-11-18 13:15:03] Message type=105 user=Mohan
-[2025-11-18 13:15:03] Write request: file=hello.txt, sentence=0, user=Mohan
-[2025-11-18 13:15:03] Lock acquired on sentence 0 in file hello.txt by user Mohan
-[2025-11-18 13:15:03] File written
-[2025-11-18 13:15:13] accept() ok: 127.0.0.1:47572
-[2025-11-18 13:15:13] process_client: start
-[2025-11-18 13:15:13] Accepted connection from 127.0.0.1:47572
-[2025-11-18 13:15:13] Request from 127.0.0.1:47572 - Request received
-[2025-11-18 13:15:13] Message type=108 user=Mohan
-[2025-11-18 13:15:13] File streamed
-[2025-11-18 13:15:32] accept() ok: 127.0.0.1:60724
-[2025-11-18 13:15:32] process_client: start
-[2025-11-18 13:15:32] Accepted connection from 127.0.0.1:60724
-[2025-11-18 13:15:32] Request from 127.0.0.1:60724 - Request received
-[2025-11-18 13:15:32] Message type=203 user=
-[2025-11-18 13:15:32] accept() ok: 127.0.0.1:60728
-[2025-11-18 13:15:32] process_client: start
-[2025-11-18 13:15:32] Accepted connection from 127.0.0.1:60728
-[2025-11-18 13:15:32] Request from 127.0.0.1:60728 - Request received
-[2025-11-18 13:15:32] Message type=203 user=
-[2025-11-18 13:16:35] accept() ok: 127.0.0.1:45358
-[2025-11-18 13:16:35] process_client: start
-[2025-11-18 13:16:35] Accepted connection from 127.0.0.1:45358
-[2025-11-18 13:16:35] Request from 127.0.0.1:45358 - Request received
-[2025-11-18 13:16:35] Message type=203 user=
-[2025-11-18 13:16:35] accept() ok: 127.0.0.1:45374
-[2025-11-18 13:16:35] process_client: start
-[2025-11-18 13:16:35] Accepted connection from 127.0.0.1:45374
-[2025-11-18 13:16:35] Request from 127.0.0.1:45374 - Request received
-[2025-11-18 13:16:35] Message type=203 user=
-[2025-11-18 13:16:57] accept() ok: 127.0.0.1:58968
-[2025-11-18 13:16:57] process_client: start
-[2025-11-18 13:16:57] Accepted connection from 127.0.0.1:58968
-[2025-11-18 13:16:57] Request from 127.0.0.1:58968 - Request received
-[2025-11-18 13:16:57] Message type=104 user=Mohan
-[2025-11-18 13:16:57] File read
-[2025-11-18 13:17:05] accept() ok: 127.0.0.1:43114
-[2025-11-18 13:17:05] process_client: start
-[2025-11-18 13:17:05] Accepted connection from 127.0.0.1:43114
-[2025-11-18 13:17:05] Request from 127.0.0.1:43114 - Request received
-[2025-11-18 13:17:05] Message type=113 user=Mohan
-[2025-11-18 13:17:05] Undo performed
-[2025-11-18 13:17:13] accept() ok: 127.0.0.1:40468
-[2025-11-18 13:17:13] process_client: start
-[2025-11-18 13:17:13] Accepted connection from 127.0.0.1:40468
-[2025-11-18 13:17:13] Request from 127.0.0.1:40468 - Request received
-[2025-11-18 13:17:13] Message type=108 user=Mohan
-[2025-11-18 13:17:13] File streamed
-[2025-11-18 13:17:28] Cleanup handler called
-[2025-11-18 13:20:34] Loading file: testfile.txt
-[2025-11-18 13:20:34] Registered with name server successfully
-[2025-11-18 13:20:34] Storage Server started on port 9000
-[2025-11-18 13:21:06] accept() ok: 127.0.0.1:52476
-[2025-11-18 13:21:06] process_client: start
-[2025-11-18 13:21:06] Accepted connection from 127.0.0.1:52476
-[2025-11-18 13:21:06] Request from 127.0.0.1:52476 - Request received
-[2025-11-18 13:21:06] Message type=203 user=
-[2025-11-18 13:22:05] Cleanup handler called
+[2025-11-18 16:27:20] Loading file: testfile.txt
+[2025-11-18 16:27:20] Registered with name server successfully
+[2025-11-18 16:27:21] Storage Server started on port 9000
+[2025-11-18 17:14:24] Cleanup handler called
+[2025-11-18 17:14:33] Loading file: testfile.txt
+[2025-11-18 17:14:33] Registered with name server successfully
+[2025-11-18 17:14:33] Storage Server started on port 9000
+[2025-11-18 17:15:13] accept() ok: 127.0.0.1:37224
+[2025-11-18 17:15:13] process_client: start
+[2025-11-18 17:15:13] Accepted connection from 127.0.0.1:37224
+[2025-11-18 17:15:13] Request from 127.0.0.1:37224 - Request received
+[2025-11-18 17:15:13] Message type=203 user=
+[2025-11-18 17:15:19] Cleanup handler called
