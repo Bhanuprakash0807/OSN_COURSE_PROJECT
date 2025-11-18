@@ -65,3 +65,12 @@
 [2025-11-18 13:17:13] Message type=108 user=Mohan
 [2025-11-18 13:17:13] File streamed
 [2025-11-18 13:17:28] Cleanup handler called
+[2025-11-18 13:20:34] Loading file: testfile.txt
+[2025-11-18 13:20:34] Registered with name server successfully
+[2025-11-18 13:20:34] Storage Server started on port 9000
+[2025-11-18 13:21:06] accept() ok: 127.0.0.1:52476
+[2025-11-18 13:21:06] process_client: start
+[2025-11-18 13:21:06] Accepted connection from 127.0.0.1:52476
+[2025-11-18 13:21:06] Request from 127.0.0.1:52476 - Request received
+[2025-11-18 13:21:06] Message type=203 user=
+[2025-11-18 13:22:05] Cleanup handler called

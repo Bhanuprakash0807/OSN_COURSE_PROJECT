@@ -79,3 +79,25 @@
 [2025-11-18 13:17:13] Selected SS 127.0.0.1:9001 for file 'hello.txt'
 [2025-11-18 13:17:13] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
 [2025-11-18 13:17:13] Response sent: error_code=0
+[2025-11-18 13:20:05] Name Server started on port 8080
+[2025-11-18 13:20:34] Storage server registered successfully
+[2025-11-18 13:20:34] Request from 127.0.0.1:32856 - Request received
+[2025-11-18 13:20:34] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 13:20:34] Response sent: error_code=0
+[2025-11-18 13:20:59] Request from 127.0.0.1:58804 - Request received
+[2025-11-18 13:20:59] Client registered successfully
+[2025-11-18 13:20:59] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 13:20:59] Response sent: error_code=0
+[2025-11-18 13:21:02] Request from 127.0.0.1:58816 - Request received
+[2025-11-18 13:21:02] About to send response for op=106, error_code=0, data='--> hello.txt
+'
+[2025-11-18 13:21:02] Response sent: error_code=0
+[2025-11-18 13:21:06] Request from 127.0.0.1:41324 - Request received
+[2025-11-18 13:21:06] About to send response for op=106, error_code=0, data='--> testfile.txt
+--> hello.txt
+'
+[2025-11-18 13:21:06] Response sent: error_code=0
+[2025-11-18 13:21:14] Request from 127.0.0.1:54064 - Request received
+[2025-11-18 13:21:14] Forwarding op 104 for file 'hello.txt' from user 'Mohan'
+[2025-11-18 13:21:14] About to send response for op=104, error_code=5, data='Storage server unavailable'
+[2025-11-18 13:21:14] Response sent: error_code=5
