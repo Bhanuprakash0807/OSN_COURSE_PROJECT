@@ -51,6 +51,7 @@
 #define ERR_BACKUP_FAILED 21
 
 #define METADATA_FILE "metadata.dat"
+#define USERS_FILE "users.dat"
 #define TEMP_DIR "/tmp/docs_plus_plus"
 #define MAX_SENTENCE_LENGTH 4096
 #define MAX_WORD_LENGTH 256
@@ -83,12 +84,14 @@
 #define ACCESS_READ 1
 #define ACCESS_WRITE 2
 
-typedef struct {
+typedef struct
+{
     char username[MAX_USERNAME];
     int access_type; // ACCESS_READ or ACCESS_WRITE
 } UserAccess;
 
-typedef struct {
+typedef struct
+{
     char filename[MAX_FILENAME];
     char owner[MAX_USERNAME];
     time_t created_time;
@@ -101,14 +104,16 @@ typedef struct {
     int char_count;
 } FileMetadata;
 
-typedef struct {
+typedef struct
+{
     int msg_type;
     char data[MAX_BUFFER];
     int error_code;
     char username[MAX_USERNAME];
 } Message;
 
-typedef struct {
+typedef struct
+{
     char ip[INET_ADDRSTRLEN];
     int nm_port;
     int client_port;
@@ -117,7 +122,8 @@ typedef struct {
     int is_active;
 } StorageServerInfo;
 
-typedef struct {
+typedef struct
+{
     char ip[INET_ADDRSTRLEN];
     int port;
     char username[MAX_USERNAME];
@@ -129,8 +135,8 @@ typedef struct {
 void log_message(const char *component, const char *message);
 void log_error(const char *component, const char *operation, int error_code, const char *details);
 void log_request(const char *component, const char *ip, int port, const char *operation);
-char* get_timestamp();
-const char* get_error_string(int error_code);
+char *get_timestamp();
+const char *get_error_string(int error_code);
 int send_message(int sockfd, Message *msg);
 int receive_message(int sockfd, Message *msg);
 

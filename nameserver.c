@@ -33,6 +33,45 @@ int num_clients = 0;
 pthread_mutex_t client_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t client_cond = PTHREAD_COND_INITIALIZER;  // For client list changes
 
+// Persistent user list
+char known_users[MAX_CLIENTS][MAX_USERNAME];
+int num_known_users = 0;
+pthread_mutex_t users_mutex = PTHREAD_MUTEX_INITIALIZER;
+
+static void load_users() {
+    FILE *fp = fopen(USERS_FILE, "r");
+    if (!fp) return;
+    char line[MAX_USERNAME + 4];
+    pthread_mutex_lock(&users_mutex);
+    num_known_users = 0;
+    while (fgets(line, sizeof(line), fp) && num_known_users < MAX_CLIENTS) {
+        line[strcspn(line, "\n")] = '\0';
+        if (line[0]) {
+            strncpy(known_users[num_known_users], line, MAX_USERNAME - 1);
+            known_users[num_known_users][MAX_USERNAME - 1] = '\0';
+            num_known_users++;
+        }
+    }
+    pthread_mutex_unlock(&users_mutex);
+    fclose(fp);
+}
+
+static void save_users() {
+    pthread_mutex_lock(&users_mutex);
+    char tmpfile[MAX_PATH];
+    snprintf(tmpfile, sizeof(tmpfile), "%s.tmp", USERS_FILE);
+    FILE *fp = fopen(tmpfile, "w");
+    if (!fp) { pthread_mutex_unlock(&users_mutex); return; }
+    for (int i = 0; i < num_known_users; i++) {
+        fprintf(fp, "%s\n", known_users[i]);
+    }
+    fflush(fp);
+    fsync(fileno(fp));
+    fclose(fp);
+    rename(tmpfile, USERS_FILE);
+    pthread_mutex_unlock(&users_mutex);
+}
+
 FileRecord files[MAX_FILES];
 int num_files = 0;
 pthread_mutex_t file_mutex = PTHREAD_MUTEX_INITIALIZER;
@@ -506,6 +545,21 @@ void* handle_client(void *arg) {
                 pthread_mutex_unlock(&client_mutex);
 
                 log_message("NM", "Client registered successfully");
+                // Persist username if new (add under lock, save after unlocking)
+                int save_needed = 0;
+                pthread_mutex_lock(&users_mutex);
+                int found = 0;
+                for (int ui = 0; ui < num_known_users; ui++) {
+                    if (strcmp(known_users[ui], msg.username) == 0) { found = 1; break; }
+                }
+                if (!found && num_known_users < MAX_CLIENTS) {
+                    strncpy(known_users[num_known_users], msg.username, MAX_USERNAME - 1);
+                    known_users[num_known_users][MAX_USERNAME - 1] = '\0';
+                    num_known_users++;
+                    save_needed = 1;
+                }
+                pthread_mutex_unlock(&users_mutex);
+                if (save_needed) save_users();
                 snprintf(response.data, MAX_BUFFER, "Registration successful");
                 break;
             }
@@ -528,17 +582,52 @@ void* handle_client(void *arg) {
                 // Parse list
                 int n = 0;
                 if (sscanf(msg.data, "LIST %d", &n) == 1 && n >= 0) {
-                    // Advance to filenames after first line
+                    // Parse extended payload: for each file include owner, metadata and ACLs
                     char *p = strchr(msg.data, '\n');
                     for (int i = 0; i < n && p; i++) {
-                        p++;
-                        if (!*p) break;
-                        char fname[MAX_FILENAME];
+                        p++; if (!*p) break;
+                        // filename
+                        char fname[MAX_FILENAME] = "";
                         int len = 0;
                         while (p[len] && p[len] != '\n' && len < MAX_FILENAME-1) len++;
-                        memcpy(fname, p, len); fname[len] = '\0';
-                        if (len > 0) {
-                            // Register file if not present; otherwise update ss_index
+                        if (len > 0) { memcpy(fname, p, len); fname[len] = '\0'; }
+                        p += len; if (*p == '\n') p++;
+
+                        // owner
+                        char owner[MAX_USERNAME] = "";
+                        len = 0;
+                        while (p[len] && p[len] != '\n' && len < MAX_USERNAME-1) len++;
+                        if (len > 0) { memcpy(owner, p, len); owner[len] = '\0'; }
+                        p += len; if (*p == '\n') p++;
+
+                        // metadata line: size words chars accessed modified created
+                        long size = 0; int words = 0, chars = 0; long acc = 0, mod = 0, crt = 0;
+                        if (sscanf(p, "%ld %d %d %ld %ld %ld", &size, &words, &chars, &acc, &mod, &crt) < 6) {
+                            // malformed; stop parsing
+                            break;
+                        }
+                        // advance to end of metadata line
+                        char *nl = strchr(p, '\n'); if (!nl) break; p = nl + 1;
+
+                        // number of users
+                        int u = 0;
+                        if (sscanf(p, "%d", &u) == 1) {
+                            nl = strchr(p, '\n'); if (!nl) break; p = nl + 1;
+                        }
+
+                        UserAccess tmp_users[MAX_ACCESS_USERS];
+                        int tmp_u = 0;
+                        for (int uu = 0; uu < u && p; uu++) {
+                            char uname[MAX_USERNAME] = ""; int at = ACCESS_READ;
+                            if (sscanf(p, "%63s %d", uname, &at) == 2) {
+                                strncpy(tmp_users[tmp_u].username, uname, MAX_USERNAME - 1);
+                                tmp_users[tmp_u].access_type = at;
+                                tmp_u++;
+                            }
+                            nl = strchr(p, '\n'); if (!nl) { p = NULL; break; } p = nl + 1;
+                        }
+
+                        if (strlen(fname) > 0) {
                             pthread_mutex_lock(&file_mutex);
                             int found_index = -1;
                             for (int j = 0; j < num_files; j++) {
@@ -546,16 +635,34 @@ void* handle_client(void *arg) {
                             }
                             if (found_index >= 0) {
                                 files[found_index].ss_index = ss_idx;
+                                strncpy(files[found_index].metadata.owner, owner, MAX_USERNAME - 1);
+                                files[found_index].metadata.size = size;
+                                files[found_index].metadata.word_count = words;
+                                files[found_index].metadata.char_count = chars;
+                                files[found_index].metadata.accessed_time = (time_t)acc;
+                                files[found_index].metadata.modified_time = (time_t)mod;
+                                files[found_index].metadata.created_time = (time_t)crt;
+                                files[found_index].metadata.num_users = 0;
+                                for (int uu = 0; uu < tmp_u && uu < MAX_ACCESS_USERS; uu++) {
+                                    strncpy(files[found_index].metadata.users[uu].username, tmp_users[uu].username, MAX_USERNAME - 1);
+                                    files[found_index].metadata.users[uu].access_type = tmp_users[uu].access_type;
+                                    files[found_index].metadata.num_users++;
+                                }
                             } else if (num_files < MAX_FILES) {
                                 strncpy(files[num_files].metadata.filename, fname, MAX_FILENAME - 1);
-                                files[num_files].metadata.owner[0] = '\0';
-                                files[num_files].metadata.created_time = time(NULL);
-                                files[num_files].metadata.modified_time = time(NULL);
-                                files[num_files].metadata.accessed_time = time(NULL);
-                                files[num_files].metadata.size = 0;
-                                files[num_files].metadata.word_count = 0;
-                                files[num_files].metadata.char_count = 0;
+                                strncpy(files[num_files].metadata.owner, owner, MAX_USERNAME - 1);
+                                files[num_files].metadata.size = size;
+                                files[num_files].metadata.word_count = words;
+                                files[num_files].metadata.char_count = chars;
+                                files[num_files].metadata.accessed_time = (time_t)acc;
+                                files[num_files].metadata.modified_time = (time_t)mod;
+                                files[num_files].metadata.created_time = (time_t)crt;
                                 files[num_files].metadata.num_users = 0;
+                                for (int uu = 0; uu < tmp_u && uu < MAX_ACCESS_USERS; uu++) {
+                                    strncpy(files[num_files].metadata.users[uu].username, tmp_users[uu].username, MAX_USERNAME - 1);
+                                    files[num_files].metadata.users[uu].access_type = tmp_users[uu].access_type;
+                                    files[num_files].metadata.num_users++;
+                                }
                                 files[num_files].ss_index = ss_idx;
                                 num_files++;
                             }
@@ -564,7 +671,6 @@ void* handle_client(void *arg) {
                             trie_insert(file_trie_root, fname, ss_idx);
                             pthread_mutex_unlock(&trie_mutex);
                         }
-                        p = strchr(p, '\n');
                     }
                     snprintf(response.data, MAX_BUFFER, "OK");
                     // Persist metadata to capture any newly discovered files
@@ -603,10 +709,37 @@ void* handle_client(void *arg) {
                             char *p = strchr(ss_resp.data, '\n');
                             for (int j = 0; j < n && p; j++) {
                                 p++; if (!*p) break;
-                                char fname[MAX_FILENAME]; int len = 0;
+                                char fname[MAX_FILENAME] = "";
+                                int len = 0;
                                 while (p[len] && p[len] != '\n' && len < MAX_FILENAME-1) len++;
-                                memcpy(fname, p, len); fname[len] = '\0';
-                                if (len > 0) {
+                                if (len > 0) { memcpy(fname, p, len); fname[len] = '\0'; }
+                                p += len; if (*p == '\n') p++;
+
+                                char owner[MAX_USERNAME] = "";
+                                len = 0;
+                                while (p[len] && p[len] != '\n' && len < MAX_USERNAME-1) len++;
+                                if (len > 0) { memcpy(owner, p, len); owner[len] = '\0'; }
+                                p += len; if (*p == '\n') p++;
+
+                                long size=0; int words=0, chars=0; long acc=0, mod=0, crt=0;
+                                if (sscanf(p, "%ld %d %d %ld %ld %ld", &size, &words, &chars, &acc, &mod, &crt) < 6) break;
+                                char *nl = strchr(p, '\n'); if (!nl) break; p = nl + 1;
+
+                                int u = 0;
+                                if (sscanf(p, "%d", &u) == 1) { nl = strchr(p, '\n'); if (!nl) break; p = nl + 1; }
+
+                                UserAccess tmp_users[MAX_ACCESS_USERS]; int tmp_u = 0;
+                                for (int uu = 0; uu < u && p; uu++) {
+                                    char uname[MAX_USERNAME] = ""; int at = ACCESS_READ;
+                                    if (sscanf(p, "%63s %d", uname, &at) == 2) {
+                                        strncpy(tmp_users[tmp_u].username, uname, MAX_USERNAME - 1);
+                                        tmp_users[tmp_u].access_type = at;
+                                        tmp_u++;
+                                    }
+                                    nl = strchr(p, '\n'); if (!nl) { p = NULL; break; } p = nl + 1;
+                                }
+
+                                if (strlen(fname) > 0) {
                                     pthread_mutex_lock(&file_mutex);
                                     int found_index = -1;
                                     for (int k = 0; k < num_files; k++) {
@@ -614,16 +747,34 @@ void* handle_client(void *arg) {
                                     }
                                     if (found_index >= 0) {
                                         files[found_index].ss_index = i;
+                                        strncpy(files[found_index].metadata.owner, owner, MAX_USERNAME - 1);
+                                        files[found_index].metadata.size = size;
+                                        files[found_index].metadata.word_count = words;
+                                        files[found_index].metadata.char_count = chars;
+                                        files[found_index].metadata.accessed_time = (time_t)acc;
+                                        files[found_index].metadata.modified_time = (time_t)mod;
+                                        files[found_index].metadata.created_time = (time_t)crt;
+                                        files[found_index].metadata.num_users = 0;
+                                        for (int uu = 0; uu < tmp_u && uu < MAX_ACCESS_USERS; uu++) {
+                                            strncpy(files[found_index].metadata.users[uu].username, tmp_users[uu].username, MAX_USERNAME - 1);
+                                            files[found_index].metadata.users[uu].access_type = tmp_users[uu].access_type;
+                                            files[found_index].metadata.num_users++;
+                                        }
                                     } else if (num_files < MAX_FILES) {
                                         strncpy(files[num_files].metadata.filename, fname, MAX_FILENAME - 1);
-                                        files[num_files].metadata.owner[0] = '\0';
-                                        files[num_files].metadata.created_time = time(NULL);
-                                        files[num_files].metadata.modified_time = time(NULL);
-                                        files[num_files].metadata.accessed_time = time(NULL);
-                                        files[num_files].metadata.size = 0;
-                                        files[num_files].metadata.word_count = 0;
-                                        files[num_files].metadata.char_count = 0;
+                                        strncpy(files[num_files].metadata.owner, owner, MAX_USERNAME - 1);
+                                        files[num_files].metadata.size = size;
+                                        files[num_files].metadata.word_count = words;
+                                        files[num_files].metadata.char_count = chars;
+                                        files[num_files].metadata.accessed_time = (time_t)acc;
+                                        files[num_files].metadata.modified_time = (time_t)mod;
+                                        files[num_files].metadata.created_time = (time_t)crt;
                                         files[num_files].metadata.num_users = 0;
+                                        for (int uu = 0; uu < tmp_u && uu < MAX_ACCESS_USERS; uu++) {
+                                            strncpy(files[num_files].metadata.users[uu].username, tmp_users[uu].username, MAX_USERNAME - 1);
+                                            files[num_files].metadata.users[uu].access_type = tmp_users[uu].access_type;
+                                            files[num_files].metadata.num_users++;
+                                        }
                                         files[num_files].ss_index = i;
                                         num_files++;
                                     }
@@ -632,7 +783,6 @@ void* handle_client(void *arg) {
                                     trie_insert(file_trie_root, fname, i);
                                     pthread_mutex_unlock(&trie_mutex);
                                 }
-                                p = strchr(p, '\n');
                             }
                             rescan_success = 1;
                         }
@@ -1207,6 +1357,8 @@ int main(int argc, char *argv[]) {
     cache_last_cleanup = time(NULL);
 
     // Load persisted metadata (owner/ACL) before SS reconciliation
+    // Load persisted user list first, then metadata
+    load_users();
     load_metadata();
     // Mark persisted entries as unverified: don't expose files until an SS confirms
     // This avoids showing stale files that may have been removed from storage

@@ -1,82 +1,67 @@
-[2025-11-17 23:44:09] Registered with name server successfully
-[2025-11-17 23:44:09] Storage Server started on port 9001
-[2025-11-17 23:44:09] Registered with name server successfully
-[2025-11-17 23:44:09] Storage Server started on port 9002
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52802
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52802
-[2025-11-17 23:44:10] Request from 127.0.0.1:52802 - Request received
-[2025-11-17 23:44:10] Message type=102 user=
-[2025-11-17 23:44:10] File created
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52806
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52806
-[2025-11-17 23:44:10] Request from 127.0.0.1:52806 - Request received
-[2025-11-17 23:44:10] Message type=105 user=userA
-[2025-11-17 23:44:10] Write request: file=testfile.txt, sentence=0, user=userA
-[2025-11-17 23:44:10] Lock acquired on sentence 0 in file testfile.txt by user userA
-[2025-11-17 23:44:10] File written
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52814
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52814
-[2025-11-17 23:44:10] Request from 127.0.0.1:52814 - Request received
-[2025-11-17 23:44:10] Message type=104 user=userA
-[2025-11-17 23:44:10] File read
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52828
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52828
-[2025-11-17 23:44:10] Request from 127.0.0.1:52828 - Request received
-[2025-11-17 23:44:10] Message type=203 user=
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52832
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52832
-[2025-11-17 23:44:10] Request from 127.0.0.1:52832 - Request received
-[2025-11-17 23:44:10] Message type=108 user=userA
-[2025-11-17 23:44:10] File streamed
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52838
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52838
-[2025-11-17 23:44:10] Request from 127.0.0.1:52838 - Request received
-[2025-11-17 23:44:10] Message type=113 user=userA
-[2025-11-17 23:44:10] Undo performed
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52842
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52842
-[2025-11-17 23:44:10] Request from 127.0.0.1:52842 - Request received
-[2025-11-17 23:44:10] Message type=104 user=userA
-[2025-11-17 23:44:10] File read
-[2025-11-17 23:44:10] accept() ok: 127.0.0.1:52856
-[2025-11-17 23:44:10] process_client: start
-[2025-11-17 23:44:10] Accepted connection from 127.0.0.1:52856
-[2025-11-17 23:44:10] Request from 127.0.0.1:52856 - Request received
-[2025-11-17 23:44:10] Message type=203 user=
-[2025-11-17 23:45:59] Loading file: testfile.txt
-[2025-11-17 23:45:59] Registered with name server successfully
-[2025-11-17 23:46:01] Registered with name server successfully
-[2025-11-17 23:46:02] accept() ok: 127.0.0.1:54564
-[2025-11-17 23:46:02] process_client: start
-[2025-11-17 23:46:02] Accepted connection from 127.0.0.1:54564
-[2025-11-17 23:46:02] Request from 127.0.0.1:54564 - Request received
-[2025-11-17 23:46:02] Message type=204 user=
-[2025-11-17 23:46:02] accept() ok: 127.0.0.1:54374
-[2025-11-17 23:46:02] process_client: start
-[2025-11-17 23:46:02] Accepted connection from 127.0.0.1:54374
-[2025-11-17 23:46:02] Request from 127.0.0.1:54374 - Request received
-[2025-11-17 23:46:02] Message type=204 user=
-[2025-11-17 23:46:20] Loading file: testfile.txt
-[2025-11-17 23:46:20] Registered with name server successfully
-[2025-11-17 23:46:21] Registered with name server successfully
-[2025-11-17 23:46:22] accept() ok: 127.0.0.1:36986
-[2025-11-17 23:46:22] process_client: start
-[2025-11-17 23:46:22] Accepted connection from 127.0.0.1:36986
-[2025-11-17 23:46:22] Request from 127.0.0.1:36986 - Request received
-[2025-11-17 23:46:22] Message type=204 user=
-[2025-11-17 23:46:22] accept() ok: 127.0.0.1:54752
-[2025-11-17 23:46:22] process_client: start
-[2025-11-17 23:46:22] Accepted connection from 127.0.0.1:54752
-[2025-11-17 23:46:22] Request from 127.0.0.1:54752 - Request received
-[2025-11-17 23:46:22] Message type=204 user=
-[2025-11-18 00:18:42] Loading file: testfile.txt
-[2025-11-18 00:18:42] Registered with name server successfully
-[2025-11-18 00:18:42] Storage Server started on port 9900
-[2025-11-18 00:18:59] Cleanup handler called
+[2025-11-18 13:14:08] Loading file: testfile.txt
+[2025-11-18 13:14:08] Registered with name server successfully
+[2025-11-18 13:14:08] Storage Server started on port 9001
+[2025-11-18 13:14:19] accept() ok: 127.0.0.1:52096
+[2025-11-18 13:14:19] process_client: start
+[2025-11-18 13:14:19] Accepted connection from 127.0.0.1:52096
+[2025-11-18 13:14:19] Request from 127.0.0.1:52096 - Request received
+[2025-11-18 13:14:19] Message type=203 user=
+[2025-11-18 13:14:36] accept() ok: 127.0.0.1:37232
+[2025-11-18 13:14:36] process_client: start
+[2025-11-18 13:14:36] Accepted connection from 127.0.0.1:37232
+[2025-11-18 13:14:36] Request from 127.0.0.1:37232 - Request received
+[2025-11-18 13:14:36] Message type=102 user=
+[2025-11-18 13:14:36] File created
+[2025-11-18 13:15:03] accept() ok: 127.0.0.1:47102
+[2025-11-18 13:15:03] process_client: start
+[2025-11-18 13:15:03] Accepted connection from 127.0.0.1:47102
+[2025-11-18 13:15:03] Request from 127.0.0.1:47102 - Request received
+[2025-11-18 13:15:03] Message type=105 user=Mohan
+[2025-11-18 13:15:03] Write request: file=hello.txt, sentence=0, user=Mohan
+[2025-11-18 13:15:03] Lock acquired on sentence 0 in file hello.txt by user Mohan
+[2025-11-18 13:15:03] File written
+[2025-11-18 13:15:13] accept() ok: 127.0.0.1:47572
+[2025-11-18 13:15:13] process_client: start
+[2025-11-18 13:15:13] Accepted connection from 127.0.0.1:47572
+[2025-11-18 13:15:13] Request from 127.0.0.1:47572 - Request received
+[2025-11-18 13:15:13] Message type=108 user=Mohan
+[2025-11-18 13:15:13] File streamed
+[2025-11-18 13:15:32] accept() ok: 127.0.0.1:60724
+[2025-11-18 13:15:32] process_client: start
+[2025-11-18 13:15:32] Accepted connection from 127.0.0.1:60724
+[2025-11-18 13:15:32] Request from 127.0.0.1:60724 - Request received
+[2025-11-18 13:15:32] Message type=203 user=
+[2025-11-18 13:15:32] accept() ok: 127.0.0.1:60728
+[2025-11-18 13:15:32] process_client: start
+[2025-11-18 13:15:32] Accepted connection from 127.0.0.1:60728
+[2025-11-18 13:15:32] Request from 127.0.0.1:60728 - Request received
+[2025-11-18 13:15:32] Message type=203 user=
+[2025-11-18 13:16:35] accept() ok: 127.0.0.1:45358
+[2025-11-18 13:16:35] process_client: start
+[2025-11-18 13:16:35] Accepted connection from 127.0.0.1:45358
+[2025-11-18 13:16:35] Request from 127.0.0.1:45358 - Request received
+[2025-11-18 13:16:35] Message type=203 user=
+[2025-11-18 13:16:35] accept() ok: 127.0.0.1:45374
+[2025-11-18 13:16:35] process_client: start
+[2025-11-18 13:16:35] Accepted connection from 127.0.0.1:45374
+[2025-11-18 13:16:35] Request from 127.0.0.1:45374 - Request received
+[2025-11-18 13:16:35] Message type=203 user=
+[2025-11-18 13:16:57] accept() ok: 127.0.0.1:58968
+[2025-11-18 13:16:57] process_client: start
+[2025-11-18 13:16:57] Accepted connection from 127.0.0.1:58968
+[2025-11-18 13:16:57] Request from 127.0.0.1:58968 - Request received
+[2025-11-18 13:16:57] Message type=104 user=Mohan
+[2025-11-18 13:16:57] File read
+[2025-11-18 13:17:05] accept() ok: 127.0.0.1:43114
+[2025-11-18 13:17:05] process_client: start
+[2025-11-18 13:17:05] Accepted connection from 127.0.0.1:43114
+[2025-11-18 13:17:05] Request from 127.0.0.1:43114 - Request received
+[2025-11-18 13:17:05] Message type=113 user=Mohan
+[2025-11-18 13:17:05] Undo performed
+[2025-11-18 13:17:13] accept() ok: 127.0.0.1:40468
+[2025-11-18 13:17:13] process_client: start
+[2025-11-18 13:17:13] Accepted connection from 127.0.0.1:40468
+[2025-11-18 13:17:13] Request from 127.0.0.1:40468 - Request received
+[2025-11-18 13:17:13] Message type=108 user=Mohan
+[2025-11-18 13:17:13] File streamed
+[2025-11-18 13:17:28] Cleanup handler called
