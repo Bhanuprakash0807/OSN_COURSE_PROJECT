@@ -632,11 +632,26 @@ void *handle_client(void *arg)
         case MSG_LIST_USERS:
         {
             char result[MAX_BUFFER] = "Users:\n";
-            // Build a de-duplicated list of usernames
-            char seen[MAX_CLIENTS][MAX_USERNAME];
+            // Build a de-duplicated list combining known_users (from users.dat)
+            // and currently connected clients.
+            char seen[MAX_CLIENTS * 2][MAX_USERNAME];
             int seen_count = 0;
+
+            // First add known users from users.dat (loaded into known_users)
+            pthread_mutex_lock(&users_mutex);
+            for (int i = 0; i < num_known_users && seen_count < (int)(sizeof(seen) / sizeof(seen[0])); i++)
+            {
+                if (known_users[i][0] == '\0')
+                    continue;
+                strncpy(seen[seen_count], known_users[i], MAX_USERNAME - 1);
+                seen[seen_count][MAX_USERNAME - 1] = '\0';
+                seen_count++;
+            }
+            pthread_mutex_unlock(&users_mutex);
+
+            // Next add currently connected clients if not already present
             pthread_mutex_lock(&client_mutex);
-            for (int i = 0; i < num_clients; i++)
+            for (int i = 0; i < num_clients && seen_count < (int)(sizeof(seen) / sizeof(seen[0])); i++)
             {
                 int duplicate = 0;
                 for (int j = 0; j < seen_count; j++)
@@ -647,7 +662,7 @@ void *handle_client(void *arg)
                         break;
                     }
                 }
-                if (!duplicate && seen_count < MAX_CLIENTS)
+                if (!duplicate)
                 {
                     strncpy(seen[seen_count], clients[i].username, MAX_USERNAME - 1);
                     seen[seen_count][MAX_USERNAME - 1] = '\0';
@@ -655,11 +670,13 @@ void *handle_client(void *arg)
                 }
             }
             pthread_mutex_unlock(&client_mutex);
+
+            // Format into response
             for (int i = 0; i < seen_count; i++)
             {
-                strcat(result, "--> ");
-                strcat(result, seen[i]);
-                strcat(result, "\n");
+                strncat(result, "--> ", sizeof(result) - strlen(result) - 1);
+                strncat(result, seen[i], sizeof(result) - strlen(result) - 1);
+                strncat(result, "\n", sizeof(result) - strlen(result) - 1);
             }
             strncpy(response.data, result, MAX_BUFFER - 1);
             break;

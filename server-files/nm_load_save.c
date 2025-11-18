@@ -88,6 +88,9 @@ int save_metadata_locked()
     for (int i = 0; i < num_files; i++)
     {
         FileRecord *fr = &files[i];
+        // Do not persist metadata for the metadata file itself (avoid self-entry)
+        if (strcmp(fr->metadata.filename, METADATA_FILE) == 0)
+            continue;
         // filename
         fprintf(fp, "%s\n", fr->metadata.filename);
         // owner

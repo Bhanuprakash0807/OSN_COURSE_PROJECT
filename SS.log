@@ -11,3 +11,483 @@
 [2025-11-18 17:15:13] Request from 127.0.0.1:37224 - Request received
 [2025-11-18 17:15:13] Message type=203 user=
 [2025-11-18 17:15:19] Cleanup handler called
+[2025-11-18 19:40:33] Error in connect: Network error (code=18) - Failed to connect to name server after retries
+[2025-11-18 19:40:44] Registered with name server successfully
+[2025-11-18 19:40:44] Storage Server started on port 9001
+[2025-11-18 19:41:05] Registered with name server successfully
+[2025-11-18 19:41:05] Storage Server started on port 9002
+[2025-11-18 19:41:52] accept() ok: 127.0.0.1:56124
+[2025-11-18 19:41:52] process_client: start
+[2025-11-18 19:41:52] Accepted connection from 127.0.0.1:56124
+[2025-11-18 19:41:52] Request from 127.0.0.1:56124 - Request received
+[2025-11-18 19:41:52] Message type=102 user=
+[2025-11-18 19:41:52] File created
+[2025-11-18 19:42:08] accept() ok: 127.0.0.1:59992
+[2025-11-18 19:42:08] process_client: start
+[2025-11-18 19:42:08] Accepted connection from 127.0.0.1:59992
+[2025-11-18 19:42:08] Request from 127.0.0.1:59992 - Request received
+[2025-11-18 19:42:08] Message type=105 user=bhanu
+[2025-11-18 19:42:08] Write request: file=bhanu.txt, sentence=0, user=bhanu
+[2025-11-18 19:42:08] Lock acquired on sentence 0 in file bhanu.txt by user bhanu
+[2025-11-18 19:42:08] File written
+[2025-11-18 19:42:12] accept() ok: 127.0.0.1:59998
+[2025-11-18 19:42:12] process_client: start
+[2025-11-18 19:42:12] Accepted connection from 127.0.0.1:59998
+[2025-11-18 19:42:12] Request from 127.0.0.1:59998 - Request received
+[2025-11-18 19:42:12] Message type=104 user=bhanu
+[2025-11-18 19:42:12] File read
+[2025-11-18 19:42:17] accept() ok: 127.0.0.1:59696
+[2025-11-18 19:42:17] process_client: start
+[2025-11-18 19:42:17] Accepted connection from 127.0.0.1:59696
+[2025-11-18 19:42:17] Request from 127.0.0.1:59696 - Request received
+[2025-11-18 19:42:17] Message type=108 user=bhanu
+[2025-11-18 19:42:17] File streamed
+[2025-11-18 19:42:22] accept() ok: 127.0.0.1:59698
+[2025-11-18 19:42:22] process_client: start
+[2025-11-18 19:42:22] Accepted connection from 127.0.0.1:59698
+[2025-11-18 19:42:22] Request from 127.0.0.1:59698 - Request received
+[2025-11-18 19:42:22] Message type=203 user=
+[2025-11-18 19:42:55] accept() ok: 127.0.0.1:47698
+[2025-11-18 19:42:55] process_client: start
+[2025-11-18 19:42:55] Accepted connection from 127.0.0.1:47698
+[2025-11-18 19:42:55] Request from 127.0.0.1:47698 - Request received
+[2025-11-18 19:42:55] Message type=203 user=
+[2025-11-18 19:51:15] Loading file: bhanu.txt
+[2025-11-18 19:51:15] Registered with name server successfully
+[2025-11-18 19:51:15] Storage Server started on port 9001
+[2025-11-18 19:51:29] Registered with name server successfully
+[2025-11-18 19:51:29] Storage Server started on port 9002
+[2025-11-18 19:51:44] accept() ok: 127.0.0.1:35146
+[2025-11-18 19:51:44] process_client: start
+[2025-11-18 19:51:44] Accepted connection from 127.0.0.1:35146
+[2025-11-18 19:51:44] Request from 127.0.0.1:35146 - Request received
+[2025-11-18 19:51:44] Message type=203 user=
+[2025-11-18 19:51:47] accept() ok: 127.0.0.1:35160
+[2025-11-18 19:51:47] process_client: start
+[2025-11-18 19:51:47] Accepted connection from 127.0.0.1:35160
+[2025-11-18 19:51:47] Request from 127.0.0.1:35160 - Request received
+[2025-11-18 19:51:47] Message type=203 user=
+[2025-11-18 20:46:10] Loading file: bhanu.txt
+[2025-11-18 20:46:10] Registered with name server successfully
+[2025-11-18 20:46:10] Storage Server started on port 9000
+[2025-11-18 20:47:53] accept() ok: 127.0.0.1:33730
+[2025-11-18 20:47:53] process_client: start
+[2025-11-18 20:47:53] Accepted connection from 127.0.0.1:33730
+[2025-11-18 20:47:53] Request from 127.0.0.1:33730 - Request received
+[2025-11-18 20:47:53] Message type=102 user=
+[2025-11-18 20:47:53] File created
+[2025-11-18 20:48:00] accept() ok: 127.0.0.1:42086
+[2025-11-18 20:48:00] process_client: start
+[2025-11-18 20:48:00] Accepted connection from 127.0.0.1:42086
+[2025-11-18 20:48:00] Request from 127.0.0.1:42086 - Request received
+[2025-11-18 20:48:00] Message type=203 user=
+[2025-11-18 20:48:16] accept() ok: 127.0.0.1:45208
+[2025-11-18 20:48:16] process_client: start
+[2025-11-18 20:48:16] Accepted connection from 127.0.0.1:45208
+[2025-11-18 20:48:16] Request from 127.0.0.1:45208 - Request received
+[2025-11-18 20:48:16] Message type=203 user=
+[2025-11-18 20:48:22] accept() ok: 127.0.0.1:41090
+[2025-11-18 20:48:22] process_client: start
+[2025-11-18 20:48:22] Accepted connection from 127.0.0.1:41090
+[2025-11-18 20:48:22] Request from 127.0.0.1:41090 - Request received
+[2025-11-18 20:48:22] Message type=203 user=
+[2025-11-18 20:48:22] accept() ok: 127.0.0.1:41094
+[2025-11-18 20:48:22] process_client: start
+[2025-11-18 20:48:22] Accepted connection from 127.0.0.1:41094
+[2025-11-18 20:48:22] Request from 127.0.0.1:41094 - Request received
+[2025-11-18 20:48:22] Message type=203 user=
+[2025-11-18 20:48:33] Cleanup handler called
+[2025-11-18 20:48:36] Cleanup handler called
+[2025-11-18 20:48:39] Loading file: metadata.dat
+[2025-11-18 20:48:39] Loading file: bhanu.txt
+[2025-11-18 20:48:39] Loading file: hello.txt
+[2025-11-18 20:48:39] Registered with name server successfully
+[2025-11-18 20:48:50] Loading file: metadata.dat
+[2025-11-18 20:48:50] Loading file: bhanu.txt
+[2025-11-18 20:48:50] Loading file: hello.txt
+[2025-11-18 20:48:50] Registered with name server successfully
+[2025-11-18 20:49:26] Loading file: metadata.dat
+[2025-11-18 20:49:26] Loading file: bhanu.txt
+[2025-11-18 20:49:26] Loading file: hello.txt
+[2025-11-18 20:49:26] Registered with name server successfully
+[2025-11-18 20:49:26] Storage Server started on port 9000
+[2025-11-18 20:49:37] accept() ok: 127.0.0.1:52982
+[2025-11-18 20:49:37] process_client: start
+[2025-11-18 20:49:37] Accepted connection from 127.0.0.1:52982
+[2025-11-18 20:49:37] Request from 127.0.0.1:52982 - Request received
+[2025-11-18 20:49:37] Message type=203 user=
+[2025-11-18 20:49:37] accept() ok: 127.0.0.1:52984
+[2025-11-18 20:49:37] process_client: start
+[2025-11-18 20:49:37] Accepted connection from 127.0.0.1:52984
+[2025-11-18 20:49:37] Request from 127.0.0.1:52984 - Request received
+[2025-11-18 20:49:37] Message type=203 user=
+[2025-11-18 20:49:37] accept() ok: 127.0.0.1:52986
+[2025-11-18 20:49:37] process_client: start
+[2025-11-18 20:49:37] Accepted connection from 127.0.0.1:52986
+[2025-11-18 20:49:37] Request from 127.0.0.1:52986 - Request received
+[2025-11-18 20:49:37] Message type=203 user=
+[2025-11-18 20:49:37] accept() ok: 127.0.0.1:52996
+[2025-11-18 20:49:37] process_client: start
+[2025-11-18 20:49:37] Accepted connection from 127.0.0.1:52996
+[2025-11-18 20:49:37] Request from 127.0.0.1:52996 - Request received
+[2025-11-18 20:49:37] Message type=203 user=
+[2025-11-18 20:49:37] accept() ok: 127.0.0.1:53010
+[2025-11-18 20:49:37] process_client: start
+[2025-11-18 20:49:37] Accepted connection from 127.0.0.1:53010
+[2025-11-18 20:49:37] Request from 127.0.0.1:53010 - Request received
+[2025-11-18 20:49:37] Message type=203 user=
+[2025-11-18 20:49:59] Cleanup handler called
+[2025-11-18 20:53:19] Loading file: metadata.dat
+[2025-11-18 20:53:19] Loading file: bhanu.txt
+[2025-11-18 20:53:19] Loading file: hello.txt
+[2025-11-18 20:53:19] Registered with name server successfully
+[2025-11-18 20:53:19] Storage Server started on port 9000
+[2025-11-18 20:53:49] accept() ok: 127.0.0.1:34302
+[2025-11-18 20:53:49] process_client: start
+[2025-11-18 20:53:49] Accepted connection from 127.0.0.1:34302
+[2025-11-18 20:53:49] Request from 127.0.0.1:34302 - Request received
+[2025-11-18 20:53:49] Message type=203 user=
+[2025-11-18 20:53:53] accept() ok: 127.0.0.1:34318
+[2025-11-18 20:53:53] process_client: start
+[2025-11-18 20:53:53] Accepted connection from 127.0.0.1:34318
+[2025-11-18 20:53:53] Request from 127.0.0.1:34318 - Request received
+[2025-11-18 20:53:53] Message type=203 user=
+[2025-11-18 20:53:53] accept() ok: 127.0.0.1:34334
+[2025-11-18 20:53:53] process_client: start
+[2025-11-18 20:53:53] Accepted connection from 127.0.0.1:34334
+[2025-11-18 20:53:53] Request from 127.0.0.1:34334 - Request received
+[2025-11-18 20:53:53] Message type=203 user=
+[2025-11-18 20:53:53] accept() ok: 127.0.0.1:34342
+[2025-11-18 20:53:53] process_client: start
+[2025-11-18 20:53:53] Accepted connection from 127.0.0.1:34342
+[2025-11-18 20:53:53] Request from 127.0.0.1:34342 - Request received
+[2025-11-18 20:53:53] Message type=203 user=
+[2025-11-18 20:53:53] accept() ok: 127.0.0.1:34346
+[2025-11-18 20:53:53] process_client: start
+[2025-11-18 20:53:53] Accepted connection from 127.0.0.1:34346
+[2025-11-18 20:53:53] Request from 127.0.0.1:34346 - Request received
+[2025-11-18 20:53:53] Message type=203 user=
+[2025-11-18 20:53:53] accept() ok: 127.0.0.1:34360
+[2025-11-18 20:53:53] process_client: start
+[2025-11-18 20:53:53] Accepted connection from 127.0.0.1:34360
+[2025-11-18 20:53:53] Request from 127.0.0.1:34360 - Request received
+[2025-11-18 20:53:53] Message type=203 user=
+[2025-11-18 20:56:28] Cleanup handler called
+[2025-11-18 20:56:42] Loading file: metadata.dat
+[2025-11-18 20:56:42] Loading file: bhanu.txt
+[2025-11-18 20:56:42] Loading file: hello.txt
+[2025-11-18 20:56:42] Registered with name server successfully
+[2025-11-18 20:56:42] Storage Server started on port 9000
+[2025-11-18 20:56:55] accept() ok: 127.0.0.1:44068
+[2025-11-18 20:56:55] process_client: start
+[2025-11-18 20:56:55] Accepted connection from 127.0.0.1:44068
+[2025-11-18 20:56:55] Request from 127.0.0.1:44068 - Request received
+[2025-11-18 20:56:55] Message type=203 user=
+[2025-11-18 20:56:55] accept() ok: 127.0.0.1:44072
+[2025-11-18 20:56:55] process_client: start
+[2025-11-18 20:56:55] Accepted connection from 127.0.0.1:44072
+[2025-11-18 20:56:55] Request from 127.0.0.1:44072 - Request received
+[2025-11-18 20:56:55] Message type=203 user=
+[2025-11-18 20:56:55] accept() ok: 127.0.0.1:44078
+[2025-11-18 20:56:55] process_client: start
+[2025-11-18 20:56:55] Accepted connection from 127.0.0.1:44078
+[2025-11-18 20:56:55] Request from 127.0.0.1:44078 - Request received
+[2025-11-18 20:56:55] Message type=203 user=
+[2025-11-18 21:03:21] Cleanup handler called
+[2025-11-18 21:05:46] Loading file: metadata.dat
+[2025-11-18 21:05:46] Loading file: bhanu.txt
+[2025-11-18 21:05:46] Loading file: hello.txt
+[2025-11-18 21:05:46] Registered with name server successfully
+[2025-11-18 21:05:46] Storage Server started on port 9000
+[2025-11-18 21:06:01] accept() ok: 127.0.0.1:44648
+[2025-11-18 21:06:01] process_client: start
+[2025-11-18 21:06:01] Accepted connection from 127.0.0.1:44648
+[2025-11-18 21:06:01] Request from 127.0.0.1:44648 - Request received
+[2025-11-18 21:06:01] Message type=203 user=
+[2025-11-18 21:06:01] accept() ok: 127.0.0.1:44662
+[2025-11-18 21:06:01] process_client: start
+[2025-11-18 21:06:01] Accepted connection from 127.0.0.1:44662
+[2025-11-18 21:06:01] Request from 127.0.0.1:44662 - Request received
+[2025-11-18 21:06:01] Message type=203 user=
+[2025-11-18 21:06:01] accept() ok: 127.0.0.1:44678
+[2025-11-18 21:06:01] process_client: start
+[2025-11-18 21:06:01] Accepted connection from 127.0.0.1:44678
+[2025-11-18 21:06:01] Request from 127.0.0.1:44678 - Request received
+[2025-11-18 21:06:01] Message type=203 user=
+[2025-11-18 21:07:22] accept() ok: 127.0.0.1:34906
+[2025-11-18 21:07:22] process_client: start
+[2025-11-18 21:07:22] Accepted connection from 127.0.0.1:34906
+[2025-11-18 21:07:22] Request from 127.0.0.1:34906 - Request received
+[2025-11-18 21:07:22] Message type=203 user=
+[2025-11-18 21:11:30] Registered with name server successfully
+[2025-11-18 21:11:31] Storage Server started on port 9001
+[2025-11-18 21:11:43] Registered with name server successfully
+[2025-11-18 21:11:43] Storage Server started on port 9002
+[2025-11-18 21:12:48] accept() ok: 127.0.0.1:42724
+[2025-11-18 21:12:48] process_client: start
+[2025-11-18 21:12:48] Accepted connection from 127.0.0.1:42724
+[2025-11-18 21:12:48] Request from 127.0.0.1:42724 - Request received
+[2025-11-18 21:12:48] Message type=102 user=
+[2025-11-18 21:12:48] File created
+[2025-11-18 21:12:55] accept() ok: 127.0.0.1:58504
+[2025-11-18 21:12:55] process_client: start
+[2025-11-18 21:12:55] Accepted connection from 127.0.0.1:58504
+[2025-11-18 21:12:55] Request from 127.0.0.1:58504 - Request received
+[2025-11-18 21:12:55] Message type=102 user=
+[2025-11-18 21:12:55] File created
+[2025-11-18 21:13:00] accept() ok: 127.0.0.1:40988
+[2025-11-18 21:13:00] process_client: start
+[2025-11-18 21:13:00] Accepted connection from 127.0.0.1:40988
+[2025-11-18 21:13:00] Request from 127.0.0.1:40988 - Request received
+[2025-11-18 21:13:00] Message type=203 user=
+[2025-11-18 21:13:02] accept() ok: 127.0.0.1:41004
+[2025-11-18 21:13:02] process_client: start
+[2025-11-18 21:13:02] Accepted connection from 127.0.0.1:41004
+[2025-11-18 21:13:02] Request from 127.0.0.1:41004 - Request received
+[2025-11-18 21:13:02] Message type=203 user=
+[2025-11-18 21:13:02] accept() ok: 127.0.0.1:48478
+[2025-11-18 21:13:02] process_client: start
+[2025-11-18 21:13:02] Accepted connection from 127.0.0.1:48478
+[2025-11-18 21:13:02] Request from 127.0.0.1:48478 - Request received
+[2025-11-18 21:13:02] Message type=203 user=
+[2025-11-18 21:13:09] accept() ok: 127.0.0.1:46564
+[2025-11-18 21:13:09] process_client: start
+[2025-11-18 21:13:09] Accepted connection from 127.0.0.1:46564
+[2025-11-18 21:13:09] Request from 127.0.0.1:46564 - Request received
+[2025-11-18 21:13:09] Message type=203 user=
+[2025-11-18 21:13:13] accept() ok: 127.0.0.1:33440
+[2025-11-18 21:13:13] process_client: start
+[2025-11-18 21:13:13] Accepted connection from 127.0.0.1:33440
+[2025-11-18 21:13:13] Request from 127.0.0.1:33440 - Request received
+[2025-11-18 21:13:13] Message type=203 user=
+[2025-11-18 21:13:27] accept() ok: 127.0.0.1:45382
+[2025-11-18 21:13:27] process_client: start
+[2025-11-18 21:13:27] Accepted connection from 127.0.0.1:45382
+[2025-11-18 21:13:27] Request from 127.0.0.1:45382 - Request received
+[2025-11-18 21:13:27] Message type=105 user=bhanu
+[2025-11-18 21:13:27] Write request: file=bhanu.txt, sentence=0, user=bhanu
+[2025-11-18 21:13:27] Lock acquired on sentence 0 in file bhanu.txt by user bhanu
+[2025-11-18 21:13:27] File written
+[2025-11-18 21:13:32] accept() ok: 127.0.0.1:41674
+[2025-11-18 21:13:32] process_client: start
+[2025-11-18 21:13:32] Accepted connection from 127.0.0.1:41674
+[2025-11-18 21:13:32] Request from 127.0.0.1:41674 - Request received
+[2025-11-18 21:13:32] Message type=108 user=bhanu
+[2025-11-18 21:13:32] File streamed
+[2025-11-18 21:13:41] accept() ok: 127.0.0.1:34040
+[2025-11-18 21:13:41] process_client: start
+[2025-11-18 21:13:41] Accepted connection from 127.0.0.1:34040
+[2025-11-18 21:13:41] Request from 127.0.0.1:34040 - Request received
+[2025-11-18 21:13:41] Message type=203 user=
+[2025-11-18 21:13:48] accept() ok: 127.0.0.1:59582
+[2025-11-18 21:13:48] process_client: start
+[2025-11-18 21:13:48] Accepted connection from 127.0.0.1:59582
+[2025-11-18 21:13:48] Request from 127.0.0.1:59582 - Request received
+[2025-11-18 21:13:48] Message type=203 user=
+[2025-11-18 21:13:48] accept() ok: 127.0.0.1:49382
+[2025-11-18 21:13:48] process_client: start
+[2025-11-18 21:13:48] Accepted connection from 127.0.0.1:49382
+[2025-11-18 21:13:48] Request from 127.0.0.1:49382 - Request received
+[2025-11-18 21:13:48] Message type=203 user=
+[2025-11-18 21:14:21] accept() ok: 127.0.0.1:37936
+[2025-11-18 21:14:21] process_client: start
+[2025-11-18 21:14:21] Accepted connection from 127.0.0.1:37936
+[2025-11-18 21:14:21] Request from 127.0.0.1:37936 - Request received
+[2025-11-18 21:14:21] Message type=105 user=mohan
+[2025-11-18 21:14:21] Write request: file=mohan.txt, sentence=0, user=mohan
+[2025-11-18 21:14:21] Lock acquired on sentence 0 in file mohan.txt by user mohan
+[2025-11-18 21:14:21] File written
+[2025-11-18 21:14:45] accept() ok: 127.0.0.1:33412
+[2025-11-18 21:14:45] process_client: start
+[2025-11-18 21:14:45] Accepted connection from 127.0.0.1:33412
+[2025-11-18 21:14:45] Request from 127.0.0.1:33412 - Request received
+[2025-11-18 21:14:45] Message type=104 user=mohan
+[2025-11-18 21:14:45] File read
+[2025-11-18 21:14:48] accept() ok: 127.0.0.1:45082
+[2025-11-18 21:14:48] process_client: start
+[2025-11-18 21:14:48] Accepted connection from 127.0.0.1:45082
+[2025-11-18 21:14:48] Request from 127.0.0.1:45082 - Request received
+[2025-11-18 21:14:48] Message type=108 user=mohan
+[2025-11-18 21:14:49] File streamed
+[2025-11-18 21:14:53] accept() ok: 127.0.0.1:45098
+[2025-11-18 21:14:53] process_client: start
+[2025-11-18 21:14:53] Accepted connection from 127.0.0.1:45098
+[2025-11-18 21:14:53] Request from 127.0.0.1:45098 - Request received
+[2025-11-18 21:14:53] Message type=203 user=
+[2025-11-18 21:15:01] accept() ok: 127.0.0.1:52982
+[2025-11-18 21:15:01] process_client: start
+[2025-11-18 21:15:01] Accepted connection from 127.0.0.1:52982
+[2025-11-18 21:15:01] Request from 127.0.0.1:52982 - Request received
+[2025-11-18 21:15:01] Message type=203 user=
+[2025-11-18 21:15:01] accept() ok: 127.0.0.1:58390
+[2025-11-18 21:15:01] process_client: start
+[2025-11-18 21:15:01] Accepted connection from 127.0.0.1:58390
+[2025-11-18 21:15:01] Request from 127.0.0.1:58390 - Request received
+[2025-11-18 21:15:01] Message type=203 user=
+[2025-11-18 21:15:05] accept() ok: 127.0.0.1:52996
+[2025-11-18 21:15:05] process_client: start
+[2025-11-18 21:15:05] Accepted connection from 127.0.0.1:52996
+[2025-11-18 21:15:05] Request from 127.0.0.1:52996 - Request received
+[2025-11-18 21:15:05] Message type=203 user=
+[2025-11-18 21:15:05] accept() ok: 127.0.0.1:58396
+[2025-11-18 21:15:05] process_client: start
+[2025-11-18 21:15:05] Accepted connection from 127.0.0.1:58396
+[2025-11-18 21:15:05] Request from 127.0.0.1:58396 - Request received
+[2025-11-18 21:15:05] Message type=203 user=
+[2025-11-18 21:15:09] accept() ok: 127.0.0.1:38588
+[2025-11-18 21:15:09] process_client: start
+[2025-11-18 21:15:09] Accepted connection from 127.0.0.1:38588
+[2025-11-18 21:15:09] Request from 127.0.0.1:38588 - Request received
+[2025-11-18 21:15:09] Message type=203 user=
+[2025-11-18 21:15:47] accept() ok: 127.0.0.1:38046
+[2025-11-18 21:15:47] process_client: start
+[2025-11-18 21:15:47] Accepted connection from 127.0.0.1:38046
+[2025-11-18 21:15:47] Request from 127.0.0.1:38046 - Request received
+[2025-11-18 21:15:47] Message type=104 user=mohan
+[2025-11-18 21:15:47] File read
+[2025-11-18 21:15:52] accept() ok: 127.0.0.1:38052
+[2025-11-18 21:15:52] process_client: start
+[2025-11-18 21:15:52] Accepted connection from 127.0.0.1:38052
+[2025-11-18 21:15:52] Request from 127.0.0.1:38052 - Request received
+[2025-11-18 21:15:52] Message type=203 user=
+[2025-11-18 21:15:55] accept() ok: 127.0.0.1:38068
+[2025-11-18 21:15:55] process_client: start
+[2025-11-18 21:15:55] Accepted connection from 127.0.0.1:38068
+[2025-11-18 21:15:55] Request from 127.0.0.1:38068 - Request received
+[2025-11-18 21:15:55] Message type=203 user=
+[2025-11-18 21:15:55] accept() ok: 127.0.0.1:34872
+[2025-11-18 21:15:55] process_client: start
+[2025-11-18 21:15:55] Accepted connection from 127.0.0.1:34872
+[2025-11-18 21:15:55] Request from 127.0.0.1:34872 - Request received
+[2025-11-18 21:15:55] Message type=203 user=
+[2025-11-18 21:16:16] accept() ok: 127.0.0.1:48474
+[2025-11-18 21:16:16] process_client: start
+[2025-11-18 21:16:16] Accepted connection from 127.0.0.1:48474
+[2025-11-18 21:16:16] Request from 127.0.0.1:48474 - Request received
+[2025-11-18 21:16:16] Message type=203 user=
+[2025-11-18 21:16:30] accept() ok: 127.0.0.1:46894
+[2025-11-18 21:16:30] process_client: start
+[2025-11-18 21:16:30] Accepted connection from 127.0.0.1:46894
+[2025-11-18 21:16:30] Request from 127.0.0.1:46894 - Request received
+[2025-11-18 21:16:30] Message type=113 user=bhanu
+[2025-11-18 21:16:30] Undo performed
+[2025-11-18 21:16:33] accept() ok: 127.0.0.1:46910
+[2025-11-18 21:16:33] process_client: start
+[2025-11-18 21:16:33] Accepted connection from 127.0.0.1:46910
+[2025-11-18 21:16:33] Request from 127.0.0.1:46910 - Request received
+[2025-11-18 21:16:33] Message type=203 user=
+[2025-11-18 21:16:40] accept() ok: 127.0.0.1:36786
+[2025-11-18 21:16:40] process_client: start
+[2025-11-18 21:16:40] Accepted connection from 127.0.0.1:36786
+[2025-11-18 21:16:40] Request from 127.0.0.1:36786 - Request received
+[2025-11-18 21:16:40] Message type=108 user=bhanu
+[2025-11-18 21:16:40] File streamed
+[2025-11-18 21:16:52] accept() ok: 127.0.0.1:37660
+[2025-11-18 21:16:52] process_client: start
+[2025-11-18 21:16:52] Accepted connection from 127.0.0.1:37660
+[2025-11-18 21:16:52] Request from 127.0.0.1:37660 - Request received
+[2025-11-18 21:16:52] Message type=105 user=bhanu
+[2025-11-18 21:16:52] Write request: file=bhanu.txt, sentence=0, user=bhanu
+[2025-11-18 21:16:52] Lock acquired on sentence 0 in file bhanu.txt by user bhanu
+[2025-11-18 21:16:52] File written
+[2025-11-18 21:17:19] accept() ok: 127.0.0.1:55474
+[2025-11-18 21:17:19] process_client: start
+[2025-11-18 21:17:19] Accepted connection from 127.0.0.1:55474
+[2025-11-18 21:17:19] Request from 127.0.0.1:55474 - Request received
+[2025-11-18 21:17:19] Message type=203 user=
+[2025-11-18 21:17:19] accept() ok: 127.0.0.1:59920
+[2025-11-18 21:17:19] process_client: start
+[2025-11-18 21:17:19] Accepted connection from 127.0.0.1:59920
+[2025-11-18 21:17:19] Request from 127.0.0.1:59920 - Request received
+[2025-11-18 21:17:19] Message type=203 user=
+[2025-11-18 21:17:30] accept() ok: 127.0.0.1:53370
+[2025-11-18 21:17:30] process_client: start
+[2025-11-18 21:17:30] Accepted connection from 127.0.0.1:53370
+[2025-11-18 21:17:30] Request from 127.0.0.1:53370 - Request received
+[2025-11-18 21:17:30] Message type=105 user=mohan
+[2025-11-18 21:17:30] Write request: file=bhanu.txt, sentence=0, user=mohan
+[2025-11-18 21:17:30] Lock acquired on sentence 0 in file bhanu.txt by user mohan
+[2025-11-18 21:17:30] File written
+[2025-11-18 21:17:37] accept() ok: 127.0.0.1:53386
+[2025-11-18 21:17:37] process_client: start
+[2025-11-18 21:17:37] Accepted connection from 127.0.0.1:53386
+[2025-11-18 21:17:37] Request from 127.0.0.1:53386 - Request received
+[2025-11-18 21:17:37] Message type=108 user=bhanu
+[2025-11-18 21:17:37] File streamed
+[2025-11-18 21:17:57] accept() ok: 127.0.0.1:42308
+[2025-11-18 21:17:57] process_client: start
+[2025-11-18 21:17:57] Accepted connection from 127.0.0.1:42308
+[2025-11-18 21:17:57] Request from 127.0.0.1:42308 - Request received
+[2025-11-18 21:17:57] Message type=113 user=bhanu
+[2025-11-18 21:17:57] Undo performed
+[2025-11-18 21:18:00] accept() ok: 127.0.0.1:45272
+[2025-11-18 21:18:00] process_client: start
+[2025-11-18 21:18:00] Accepted connection from 127.0.0.1:45272
+[2025-11-18 21:18:00] Request from 127.0.0.1:45272 - Request received
+[2025-11-18 21:18:00] Message type=108 user=bhanu
+[2025-11-18 21:18:00] File streamed
+[2025-11-18 21:19:13] Shutdown requested: performing cleanup
+[2025-11-18 21:19:21] Shutdown requested: performing cleanup
+[2025-11-18 21:22:39] Loading file: metadata.dat
+[2025-11-18 21:22:39] Loading file: bhanu.txt
+[2025-11-18 21:22:39] Registered with name server successfully
+[2025-11-18 21:22:39] Storage Server started on port 9001
+[2025-11-18 21:22:58] Loading file: metadata.dat
+[2025-11-18 21:22:58] Loading file: mohan.txt
+[2025-11-18 21:22:58] Registered with name server successfully
+[2025-11-18 21:22:58] Storage Server started on port 9002
+[2025-11-18 21:23:26] accept() ok: 127.0.0.1:56824
+[2025-11-18 21:23:26] process_client: start
+[2025-11-18 21:23:26] Accepted connection from 127.0.0.1:56824
+[2025-11-18 21:23:26] Request from 127.0.0.1:56824 - Request received
+[2025-11-18 21:23:26] Message type=203 user=
+[2025-11-18 21:23:26] accept() ok: 127.0.0.1:56836
+[2025-11-18 21:23:26] process_client: start
+[2025-11-18 21:23:26] Accepted connection from 127.0.0.1:56836
+[2025-11-18 21:23:26] Request from 127.0.0.1:56836 - Request received
+[2025-11-18 21:23:26] Message type=203 user=
+[2025-11-18 21:23:26] accept() ok: 127.0.0.1:56852
+[2025-11-18 21:23:26] process_client: start
+[2025-11-18 21:23:26] Accepted connection from 127.0.0.1:56852
+[2025-11-18 21:23:26] Request from 127.0.0.1:56852 - Request received
+[2025-11-18 21:23:26] Message type=203 user=
+[2025-11-18 21:24:07] accept() ok: 127.0.0.1:57058
+[2025-11-18 21:24:07] process_client: start
+[2025-11-18 21:24:07] Accepted connection from 127.0.0.1:57058
+[2025-11-18 21:24:07] Request from 127.0.0.1:57058 - Request received
+[2025-11-18 21:24:07] Message type=102 user=
+[2025-11-18 21:24:07] File created
+[2025-11-18 21:24:23] accept() ok: 127.0.0.1:46694
+[2025-11-18 21:24:23] process_client: start
+[2025-11-18 21:24:23] Accepted connection from 127.0.0.1:46694
+[2025-11-18 21:24:23] Request from 127.0.0.1:46694 - Request received
+[2025-11-18 21:24:23] Message type=105 user=bhanu
+[2025-11-18 21:24:23] Write request: file=newfile.txt, sentence=0, user=bhanu
+[2025-11-18 21:24:23] Lock acquired on sentence 0 in file newfile.txt by user bhanu
+[2025-11-18 21:24:23] File written
+[2025-11-18 21:24:26] accept() ok: 127.0.0.1:46700
+[2025-11-18 21:24:26] process_client: start
+[2025-11-18 21:24:26] Accepted connection from 127.0.0.1:46700
+[2025-11-18 21:24:26] Request from 127.0.0.1:46700 - Request received
+[2025-11-18 21:24:26] Message type=203 user=
+[2025-11-18 21:24:28] accept() ok: 127.0.0.1:50128
+[2025-11-18 21:24:28] process_client: start
+[2025-11-18 21:24:28] Accepted connection from 127.0.0.1:50128
+[2025-11-18 21:24:28] Request from 127.0.0.1:50128 - Request received
+[2025-11-18 21:24:28] Message type=203 user=
+[2025-11-18 21:24:28] accept() ok: 127.0.0.1:50138
+[2025-11-18 21:24:28] process_client: start
+[2025-11-18 21:24:28] Accepted connection from 127.0.0.1:50138
+[2025-11-18 21:24:28] Request from 127.0.0.1:50138 - Request received
+[2025-11-18 21:24:28] Message type=203 user=
+[2025-11-18 21:24:30] accept() ok: 127.0.0.1:50148
+[2025-11-18 21:24:30] process_client: start
+[2025-11-18 21:24:30] Accepted connection from 127.0.0.1:50148
+[2025-11-18 21:24:30] Request from 127.0.0.1:50148 - Request received
+[2025-11-18 21:24:30] Message type=203 user=
+[2025-11-18 21:24:41] accept() ok: 127.0.0.1:59010
+[2025-11-18 21:24:41] process_client: start
+[2025-11-18 21:24:41] Accepted connection from 127.0.0.1:59010
+[2025-11-18 21:24:41] Request from 127.0.0.1:59010 - Request received
+[2025-11-18 21:24:41] Message type=104 user=bhanu
+[2025-11-18 21:24:41] File read

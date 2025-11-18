@@ -59,5 +59,6 @@ int rescan_storage(void);
 int save_file(FileData *file);
 void load_file(const char *filename);
 FileData *find_file(const char *filename);
+int save_ss_metadata(void);
 
 #endif // STORAGESERVER_H

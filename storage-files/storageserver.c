@@ -19,6 +19,9 @@ pthread_mutex_t files_mutex = PTHREAD_MUTEX_INITIALIZER;
 char storage_path[MAX_PATH];
 int nm_port, client_port;
 char nm_ip[INET_ADDRSTRLEN];
+// Global server socket and shutdown flag for clean exit from signal handler
+int server_sock_global = -1;
+volatile sig_atomic_t shutdown_requested = 0;
 
 void handle_error(int client_sock, Message *response, int error_code, const char *msg)
 {
@@ -124,30 +127,13 @@ void *cleanup_locks_thread(void *arg)
 }
 
 
+// Minimal signal handler: mark shutdown requested and close the listening socket
 void cleanup_handler(__attribute__((unused)) int signo)
 {
-    log_message("SS", "Cleanup handler called");
-
-    // Save all files
-    pthread_mutex_lock(&files_mutex);
-    for (int i = 0; i < num_files; i++)
-    {
-        save_file(&files[i]);
-
-        // Cleanup sentence locks
-        if (files[i].sentence_locks)
-        {
-            for (int j = 0; j < files[i].locks_capacity; j++)
-            {
-                pthread_mutex_destroy(&files[i].sentence_locks[j].mutex);
-                pthread_cond_destroy(&files[i].sentence_locks[j].cond);
-            }
-            free(files[i].sentence_locks);
-        }
-    }
-    pthread_mutex_unlock(&files_mutex);
-
-    exit(0);
+    shutdown_requested = 1;
+    // Closing the listening socket will cause accept() to return with error
+    if (server_sock_global >= 0)
+        close(server_sock_global);
 }
 // Main entry point
 // Main entry point
@@ -368,6 +354,9 @@ int main(int argc, char *argv[])
         inet_pton(AF_INET, nm_ip, &nm_addr2.sin_addr);
         if (connect(nm_sock2, (struct sockaddr *)&nm_addr2, sizeof(nm_addr2)) == 0)
         {
+            // Ensure local ss metadata file is up-to-date before sending list
+            save_ss_metadata();
+
             Message list_msg;
             memset(&list_msg, 0, sizeof(list_msg));
             list_msg.msg_type = MSG_SS_INFO;
@@ -430,6 +419,8 @@ int main(int argc, char *argv[])
         perror("socket");
         return 1;
     }
+    // store global reference for signal handler
+    server_sock_global = server_sock;
 
     // Allow socket reuse
     int opt = 1;
@@ -557,6 +548,9 @@ int main(int argc, char *argv[])
             if (errno == EINTR)
             {
                 free(client_sock);
+                // If shutdown was requested, break main loop to perform cleanup
+                if (shutdown_requested)
+                    break;
                 continue;
             }
             if (errno == EAGAIN || errno == EWOULDBLOCK)
@@ -585,6 +579,33 @@ int main(int argc, char *argv[])
         process_client(fd);
     }
 
-    close(server_sock);
+    // Main loop exited: perform orderly shutdown and cleanup in main thread
+    log_message("SS", "Shutdown requested: performing cleanup");
+
+    // Close server socket if still open
+    if (server_sock >= 0)
+        close(server_sock);
+
+    // Save all files and free resources
+    pthread_mutex_lock(&files_mutex);
+    for (int i = 0; i < num_files; i++)
+    {
+        save_file(&files[i]);
+
+        if (files[i].sentence_locks)
+        {
+            for (int j = 0; j < files[i].locks_capacity; j++)
+            {
+                pthread_mutex_destroy(&files[i].sentence_locks[j].mutex);
+                pthread_cond_destroy(&files[i].sentence_locks[j].cond);
+            }
+            free(files[i].sentence_locks);
+            files[i].sentence_locks = NULL;
+        }
+        pthread_mutex_destroy(&files[i].lock);
+    }
+    pthread_mutex_unlock(&files_mutex);
+
+    log_message("SS", "Cleanup completed, exiting");
     return 0;
 }

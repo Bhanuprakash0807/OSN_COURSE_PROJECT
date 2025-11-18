@@ -43,17 +43,30 @@ int fetch_stats_from_ss(const char *filename, int ss_idx, FileMetadata *out, cha
     close(sock);
     if (resp.error_code != ERR_SUCCESS)
         return resp.error_code == ERR_FILE_NOT_FOUND ? ERR_FILE_NOT_FOUND : -1;
-    // Parse: words chars size last_access last_mod created [last_reader]
-    long words = 0, chars = 0, size = 0, acc = 0, mod = 0, crt = 0;
+    // Response from SS may include filename and owner lines first.
+    // Skip up to two leading lines (filename, owner) then parse:
+    // size words chars accessed modified created [last_reader]
+    long size = 0, words = 0, chars = 0, acc = 0, mod = 0, crt = 0;
     char last_reader[MAX_USERNAME] = "";
-    int n = sscanf(resp.data, "%ld %ld %ld %ld %ld %ld %63s", &words, &chars, &size, &acc, &mod, &crt, last_reader);
+    char *p = resp.data;
+    // Skip first line (filename)
+    char *nl = strchr(p, '\n');
+    if (nl)
+        p = nl + 1;
+    // Skip second line (owner)
+    nl = strchr(p, '\n');
+    if (nl)
+        p = nl + 1;
+
+    int n = sscanf(p, "%ld %ld %ld %ld %ld %ld %63s",
+                   &size, &words, &chars, &acc, &mod, &crt, last_reader);
     if (n < 6)
         return -1;
     if (out)
     {
+        out->size = size;
         out->word_count = (int)words;
         out->char_count = (int)chars;
-        out->size = size;
         out->accessed_time = (time_t)acc;
         out->modified_time = (time_t)mod;
         out->created_time = (time_t)crt;

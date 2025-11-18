@@ -39,3 +39,548 @@
 [2025-11-18 17:15:13] About to send response for op=106, error_code=0, data='--> testfile.txt
 '
 [2025-11-18 17:15:13] Response sent: error_code=0
+[2025-11-18 19:40:42] Name Server started on port 8080
+[2025-11-18 19:40:44] Storage server registered successfully
+[2025-11-18 19:40:44] Request from 127.0.0.1:55252 - Request received
+[2025-11-18 19:40:44] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 19:40:44] Response sent: error_code=0
+[2025-11-18 19:41:05] Storage server registered successfully
+[2025-11-18 19:41:05] Request from 127.0.0.1:40676 - Request received
+[2025-11-18 19:41:05] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 19:41:05] Response sent: error_code=0
+[2025-11-18 19:41:29] Request from 127.0.0.1:45334 - Request received
+[2025-11-18 19:41:29] Client registered successfully
+[2025-11-18 19:41:29] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 19:41:29] Response sent: error_code=0
+[2025-11-18 19:41:33] Request from 127.0.0.1:45340 - Request received
+[2025-11-18 19:41:33] Client registered successfully
+[2025-11-18 19:41:33] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 19:41:33] Response sent: error_code=0
+[2025-11-18 19:41:35] Request from 127.0.0.1:35732 - Request received
+[2025-11-18 19:41:35] About to send response for op=109, error_code=0, data='Users:
+--> bhanu
+--> mohan
+'
+[2025-11-18 19:41:35] Response sent: error_code=0
+[2025-11-18 19:41:37] Request from 127.0.0.1:35740 - Request received
+[2025-11-18 19:41:37] About to send response for op=106, error_code=0, data=''
+[2025-11-18 19:41:37] Response sent: error_code=0
+[2025-11-18 19:41:39] Request from 127.0.0.1:35752 - Request received
+[2025-11-18 19:41:39] About to send response for op=106, error_code=0, data=''
+[2025-11-18 19:41:39] Response sent: error_code=0
+[2025-11-18 19:41:47] Request from 127.0.0.1:57246 - Request received
+[2025-11-18 19:41:47] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+---------------------------------------------------------
+'
+[2025-11-18 19:41:47] Response sent: error_code=0
+[2025-11-18 19:41:52] Request from 127.0.0.1:57248 - Request received
+[2025-11-18 19:41:52] About to send response for op=102, error_code=0, data='Created'
+[2025-11-18 19:41:52] Response sent: error_code=0
+[2025-11-18 19:42:08] Request from 127.0.0.1:42644 - Request received
+[2025-11-18 19:42:08] Forwarding op 105 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 19:42:08] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 19:42:08] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 19:42:08] Response sent: error_code=0
+[2025-11-18 19:42:12] Request from 127.0.0.1:42650 - Request received
+[2025-11-18 19:42:12] Forwarding op 104 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 19:42:12] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 19:42:12] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 19:42:12] Response sent: error_code=0
+[2025-11-18 19:42:17] Request from 127.0.0.1:51832 - Request received
+[2025-11-18 19:42:17] Forwarding op 108 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 19:42:17] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 19:42:17] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 19:42:17] Response sent: error_code=0
+[2025-11-18 19:42:22] Request from 127.0.0.1:51836 - Request received
+[2025-11-18 19:42:22] About to send response for op=107, error_code=0, data='File: bhanu.txt
+Owner: bhanu
+Created: 2025-11-18 19:42:22
+Last Modified: 2025-11-18 19:42:22
+Size: 0 bytes
+Last Accessed: 2025-11-18 19:42:22 by bhanu
+Access: bhanu (RW)'
+[2025-11-18 19:42:22] Response sent: error_code=0
+[2025-11-18 19:42:55] Request from 127.0.0.1:49688 - Request received
+[2025-11-18 19:42:55] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     0 |     0 | 2025-11-18 19:42:55 | bhanu |
+---------------------------------------------------------
+'
+[2025-11-18 19:42:55] Response sent: error_code=0
+[2025-11-18 19:51:00] Name Server started on port 8080
+[2025-11-18 19:51:15] Storage server registered successfully
+[2025-11-18 19:51:15] Request from 127.0.0.1:35110 - Request received
+[2025-11-18 19:51:15] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 19:51:15] Response sent: error_code=0
+[2025-11-18 19:51:29] Storage server registered successfully
+[2025-11-18 19:51:29] Request from 127.0.0.1:38354 - Request received
+[2025-11-18 19:51:29] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 19:51:29] Response sent: error_code=0
+[2025-11-18 19:51:40] Request from 127.0.0.1:49932 - Request received
+[2025-11-18 19:51:40] Client registered successfully
+[2025-11-18 19:51:40] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 19:51:40] Response sent: error_code=0
+[2025-11-18 19:51:41] Request from 127.0.0.1:49934 - Request received
+[2025-11-18 19:51:41] About to send response for op=109, error_code=0, data='Users:
+--> bhanu
+'
+[2025-11-18 19:51:41] Response sent: error_code=0
+[2025-11-18 19:51:44] Request from 127.0.0.1:39186 - Request received
+[2025-11-18 19:51:44] About to send response for op=106, error_code=0, data='--> bhanu.txt
+'
+[2025-11-18 19:51:44] Response sent: error_code=0
+[2025-11-18 19:51:47] Request from 127.0.0.1:39192 - Request received
+[2025-11-18 19:51:47] About to send response for op=106, error_code=0, data='--> bhanu.txt
+'
+[2025-11-18 19:51:47] Response sent: error_code=0
+[2025-11-18 19:51:49] Request from 127.0.0.1:39196 - Request received
+[2025-11-18 19:51:49] About to send response for op=106, error_code=0, data=''
+[2025-11-18 19:51:49] Response sent: error_code=0
+[2025-11-18 19:51:52] Request from 127.0.0.1:39200 - Request received
+[2025-11-18 19:51:52] About to send response for op=106, error_code=0, data='Accessible files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+---------------------------------------------------------
+'
+[2025-11-18 19:51:52] Response sent: error_code=0
+[2025-11-18 19:52:00] Request from 127.0.0.1:43634 - Request received
+[2025-11-18 19:52:00] Forwarding op 104 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 19:52:00] About to send response for op=104, error_code=2, data='Read permission required'
+[2025-11-18 19:52:00] Response sent: error_code=2
+[2025-11-18 20:45:40] Name Server started on port 8080
+[2025-11-18 20:46:10] Storage server registered successfully
+[2025-11-18 20:46:10] Request from 127.0.0.1:60896 - Request received
+[2025-11-18 20:46:10] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 20:46:10] Response sent: error_code=0
+[2025-11-18 20:46:35] Request from 127.0.0.1:52100 - Request received
+[2025-11-18 20:46:35] Client registered successfully
+[2025-11-18 20:46:35] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 20:46:35] Response sent: error_code=0
+[2025-11-18 20:46:42] Request from 127.0.0.1:36800 - Request received
+[2025-11-18 20:46:42] About to send response for op=109, error_code=0, data='Users:
+--> bhanu
+'
+[2025-11-18 20:46:42] Response sent: error_code=0
+[2025-11-18 20:47:53] Request from 127.0.0.1:43414 - Request received
+[2025-11-18 20:47:53] About to send response for op=102, error_code=0, data='Created'
+[2025-11-18 20:47:53] Response sent: error_code=0
+[2025-11-18 20:48:00] Request from 127.0.0.1:53138 - Request received
+[2025-11-18 20:48:00] About to send response for op=106, error_code=0, data='--> hello.txt
+'
+[2025-11-18 20:48:00] Response sent: error_code=0
+[2025-11-18 20:48:09] Request from 127.0.0.1:48756 - Request received
+[2025-11-18 20:48:09] Client registered successfully
+[2025-11-18 20:48:09] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 20:48:09] Response sent: error_code=0
+[2025-11-18 20:48:16] Request from 127.0.0.1:48764 - Request received
+[2025-11-18 20:48:16] About to send response for op=106, error_code=0, data='--> hello.txt
+'
+[2025-11-18 20:48:16] Response sent: error_code=0
+[2025-11-18 20:48:22] Request from 127.0.0.1:58622 - Request received
+[2025-11-18 20:48:22] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     3 |    16 | 2025-11-18 20:46:10 | -     |
+| hello.txt  |     0 |     0 | 2025-11-18 20:47:53 | bhanu |
+---------------------------------------------------------
+'
+[2025-11-18 20:48:22] Response sent: error_code=0
+[2025-11-18 20:48:39] Storage server registered successfully
+[2025-11-18 20:48:39] Request from 127.0.0.1:47238 - Request received
+[2025-11-18 20:48:39] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 20:48:39] Response sent: error_code=0
+[2025-11-18 20:48:50] Storage server registered successfully
+[2025-11-18 20:48:50] Request from 127.0.0.1:38312 - Request received
+[2025-11-18 20:48:50] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 20:48:50] Response sent: error_code=0
+[2025-11-18 20:49:26] Storage server registered successfully
+[2025-11-18 20:49:26] Request from 127.0.0.1:38094 - Request received
+[2025-11-18 20:49:26] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 20:49:26] Response sent: error_code=0
+[2025-11-18 20:49:37] Request from 127.0.0.1:50346 - Request received
+[2025-11-18 20:49:37] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     3 |    16 | 2025-11-18 20:49:26 | -     |
+| hello.txt  |     0 |     0 | 2025-11-18 20:49:26 | bhanu |
+| metadata.dat |    28 |   171 | 2025-11-18 20:49:26 | -     |
+---------------------------------------------------------
+'
+[2025-11-18 20:49:37] Response sent: error_code=0
+[2025-11-18 20:53:19] Storage server registered successfully
+[2025-11-18 20:53:19] Request from 127.0.0.1:38782 - Request received
+[2025-11-18 20:53:19] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 20:53:19] Response sent: error_code=0
+[2025-11-18 20:53:46] Request from 127.0.0.1:36900 - Request received
+[2025-11-18 20:53:46] Client registered successfully
+[2025-11-18 20:53:46] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 20:53:46] Response sent: error_code=0
+[2025-11-18 20:53:49] Request from 127.0.0.1:58650 - Request received
+[2025-11-18 20:53:49] About to send response for op=106, error_code=0, data='--> hello.txt
+'
+[2025-11-18 20:53:49] Response sent: error_code=0
+[2025-11-18 20:53:53] Request from 127.0.0.1:58666 - Request received
+[2025-11-18 20:53:53] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> hello.txt
+--> metadata.dat
+'
+[2025-11-18 20:53:53] Response sent: error_code=0
+[2025-11-18 20:56:25] Name Server started on port 8080
+[2025-11-18 20:56:42] Storage server registered successfully
+[2025-11-18 20:56:42] Request from 127.0.0.1:36370 - Request received
+[2025-11-18 20:56:42] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 20:56:42] Response sent: error_code=0
+[2025-11-18 20:56:50] Request from 127.0.0.1:49744 - Request received
+[2025-11-18 20:56:50] Client registered successfully
+[2025-11-18 20:56:50] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 20:56:50] Response sent: error_code=0
+[2025-11-18 20:56:55] Request from 127.0.0.1:49754 - Request received
+[2025-11-18 20:56:55] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     0 |     0 | 2025-11-18 20:56:55 | -     |
+| hello.txt  |     0 |     0 | 2025-11-18 20:56:55 | bhanu |
+| metadata.dat |    28 |   171 | 2025-11-18 20:56:42 | -     |
+---------------------------------------------------------
+'
+[2025-11-18 20:56:55] Response sent: error_code=0
+[2025-11-18 21:05:42] Name Server started on port 8080
+[2025-11-18 21:05:46] Storage server registered successfully
+[2025-11-18 21:05:46] Request from 127.0.0.1:32856 - Request received
+[2025-11-18 21:05:46] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 21:05:46] Response sent: error_code=0
+[2025-11-18 21:05:54] Request from 127.0.0.1:53416 - Request received
+[2025-11-18 21:05:54] Client registered successfully
+[2025-11-18 21:05:54] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 21:05:54] Response sent: error_code=0
+[2025-11-18 21:06:01] Request from 127.0.0.1:49610 - Request received
+[2025-11-18 21:06:01] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     0 |     0 | 2025-11-18 21:06:01 | -     |
+| hello.txt  |     0 |     0 | 2025-11-18 21:06:01 | bhanu |
+| metadata.dat |    28 |   171 | 2025-11-18 21:05:46 | -     |
+---------------------------------------------------------
+'
+[2025-11-18 21:06:01] Response sent: error_code=0
+[2025-11-18 21:07:22] Request from 127.0.0.1:56888 - Request received
+[2025-11-18 21:07:22] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> hello.txt
+--> metadata.dat
+'
+[2025-11-18 21:07:22] Response sent: error_code=0
+[2025-11-18 21:11:17] Name Server started on port 8080
+[2025-11-18 21:11:30] Storage server registered successfully
+[2025-11-18 21:11:31] Request from 127.0.0.1:58864 - Request received
+[2025-11-18 21:11:31] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 21:11:31] Response sent: error_code=0
+[2025-11-18 21:11:43] Storage server registered successfully
+[2025-11-18 21:11:43] Request from 127.0.0.1:54204 - Request received
+[2025-11-18 21:11:43] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 21:11:43] Response sent: error_code=0
+[2025-11-18 21:12:00] Request from 127.0.0.1:58368 - Request received
+[2025-11-18 21:12:00] Client registered successfully
+[2025-11-18 21:12:00] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 21:12:00] Response sent: error_code=0
+[2025-11-18 21:12:01] Request from 127.0.0.1:58380 - Request received
+[2025-11-18 21:12:01] About to send response for op=109, error_code=0, data='Users:
+--> bhanu
+'
+[2025-11-18 21:12:01] Response sent: error_code=0
+[2025-11-18 21:12:17] Request from 127.0.0.1:38796 - Request received
+[2025-11-18 21:12:17] Client registered successfully
+[2025-11-18 21:12:17] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 21:12:17] Response sent: error_code=0
+[2025-11-18 21:12:42] Request from 127.0.0.1:45650 - Request received
+[2025-11-18 21:12:42] About to send response for op=106, error_code=0, data=''
+[2025-11-18 21:12:42] Response sent: error_code=0
+[2025-11-18 21:12:44] Request from 127.0.0.1:45662 - Request received
+[2025-11-18 21:12:44] About to send response for op=106, error_code=0, data=''
+[2025-11-18 21:12:44] Response sent: error_code=0
+[2025-11-18 21:12:48] Request from 127.0.0.1:39220 - Request received
+[2025-11-18 21:12:48] About to send response for op=102, error_code=0, data='Created'
+[2025-11-18 21:12:48] Response sent: error_code=0
+[2025-11-18 21:12:55] Request from 127.0.0.1:39228 - Request received
+[2025-11-18 21:12:55] About to send response for op=102, error_code=0, data='Created'
+[2025-11-18 21:12:55] Response sent: error_code=0
+[2025-11-18 21:13:00] Request from 127.0.0.1:51878 - Request received
+[2025-11-18 21:13:00] About to send response for op=106, error_code=0, data='--> bhanu.txt
+'
+[2025-11-18 21:13:00] Response sent: error_code=0
+[2025-11-18 21:13:02] Request from 127.0.0.1:51884 - Request received
+[2025-11-18 21:13:02] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> mohan.txt
+'
+[2025-11-18 21:13:02] Response sent: error_code=0
+[2025-11-18 21:13:09] Request from 127.0.0.1:46572 - Request received
+[2025-11-18 21:13:09] About to send response for op=107, error_code=0, data='File: mohan.txt
+Owner: mohan
+Created: 2025-11-18 21:12:55
+Last Modified: 2025-11-18 21:12:55
+Size: 0 bytes
+Last Accessed: 2025-11-18 21:12:55 by 0
+Access: mohan (RW)'
+[2025-11-18 21:13:09] Response sent: error_code=0
+[2025-11-18 21:13:13] Request from 127.0.0.1:46582 - Request received
+[2025-11-18 21:13:13] About to send response for op=107, error_code=0, data='File: bhanu.txt
+Owner: bhanu
+Created: 2025-11-18 21:12:48
+Last Modified: 2025-11-18 21:12:48
+Size: 0 bytes
+Last Accessed: 2025-11-18 21:12:48 by 0
+Access: bhanu (RW)'
+[2025-11-18 21:13:13] Response sent: error_code=0
+[2025-11-18 21:13:27] Request from 127.0.0.1:37742 - Request received
+[2025-11-18 21:13:27] Forwarding op 105 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:13:27] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:13:27] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:13:27] Response sent: error_code=0
+[2025-11-18 21:13:32] Request from 127.0.0.1:47674 - Request received
+[2025-11-18 21:13:32] Forwarding op 108 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:13:32] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:13:32] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:13:32] Response sent: error_code=0
+[2025-11-18 21:13:41] Request from 127.0.0.1:60514 - Request received
+[2025-11-18 21:13:41] About to send response for op=107, error_code=0, data='File: bhanu.txt
+Owner: bhanu
+Created: 2025-11-18 21:12:48
+Last Modified: 2025-11-18 21:13:27
+Size: 12 bytes
+Last Accessed: 2025-11-18 21:12:48 by 0
+Access: bhanu (RW)'
+[2025-11-18 21:13:41] Response sent: error_code=0
+[2025-11-18 21:13:48] Request from 127.0.0.1:59144 - Request received
+[2025-11-18 21:13:48] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     3 |    12 | 2025-11-18 21:12:48 | bhanu |
+| mohan.txt  |     0 |     0 | 2025-11-18 21:12:55 | mohan |
+---------------------------------------------------------
+'
+[2025-11-18 21:13:48] Response sent: error_code=0
+[2025-11-18 21:14:21] Request from 127.0.0.1:47972 - Request received
+[2025-11-18 21:14:21] Forwarding op 105 for file 'mohan.txt' from user 'mohan'
+[2025-11-18 21:14:21] Selected SS 127.0.0.1:9002 for file 'mohan.txt'
+[2025-11-18 21:14:21] About to send response for op=105, error_code=0, data='127.0.0.1 9002'
+[2025-11-18 21:14:21] Response sent: error_code=0
+[2025-11-18 21:14:45] Request from 127.0.0.1:38908 - Request received
+[2025-11-18 21:14:45] Forwarding op 104 for file 'mohan.txt' from user 'mohan'
+[2025-11-18 21:14:45] Selected SS 127.0.0.1:9002 for file 'mohan.txt'
+[2025-11-18 21:14:45] About to send response for op=104, error_code=0, data='127.0.0.1 9002'
+[2025-11-18 21:14:45] Response sent: error_code=0
+[2025-11-18 21:14:48] Request from 127.0.0.1:36638 - Request received
+[2025-11-18 21:14:48] Forwarding op 108 for file 'mohan.txt' from user 'mohan'
+[2025-11-18 21:14:48] Selected SS 127.0.0.1:9002 for file 'mohan.txt'
+[2025-11-18 21:14:48] About to send response for op=108, error_code=0, data='127.0.0.1 9002'
+[2025-11-18 21:14:48] Response sent: error_code=0
+[2025-11-18 21:14:53] Request from 127.0.0.1:36652 - Request received
+[2025-11-18 21:14:53] About to send response for op=107, error_code=0, data='File: mohan.txt
+Owner: mohan
+Created: 2025-11-18 21:12:55
+Last Modified: 2025-11-18 21:14:21
+Size: 12 bytes
+Last Accessed: 2025-11-18 21:14:45 by 0
+Access: mohan (RW)'
+[2025-11-18 21:14:53] Response sent: error_code=0
+[2025-11-18 21:15:01] Request from 127.0.0.1:60626 - Request received
+[2025-11-18 21:15:01] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     3 |    12 | 2025-11-18 21:12:48 | bhanu |
+| mohan.txt  |     3 |    12 | 2025-11-18 21:14:45 | mohan |
+---------------------------------------------------------
+'
+[2025-11-18 21:15:01] Response sent: error_code=0
+[2025-11-18 21:15:05] Request from 127.0.0.1:60642 - Request received
+[2025-11-18 21:15:05] About to send response for op=106, error_code=0, data='All files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     3 |    12 | 2025-11-18 21:12:48 | bhanu |
+| mohan.txt  |     3 |    12 | 2025-11-18 21:14:45 | mohan |
+---------------------------------------------------------
+'
+[2025-11-18 21:15:05] Response sent: error_code=0
+[2025-11-18 21:15:09] Request from 127.0.0.1:41716 - Request received
+[2025-11-18 21:15:09] About to send response for op=107, error_code=0, data='File: bhanu.txt
+Owner: bhanu
+Created: 2025-11-18 21:12:48
+Last Modified: 2025-11-18 21:13:27
+Size: 12 bytes
+Last Accessed: 2025-11-18 21:12:48 by 0
+Access: bhanu (RW)'
+[2025-11-18 21:15:09] Response sent: error_code=0
+[2025-11-18 21:15:12] Request from 127.0.0.1:41732 - Request received
+[2025-11-18 21:15:12] Forwarding op 104 for file 'bhanu.txt' from user 'mohan'
+[2025-11-18 21:15:12] About to send response for op=104, error_code=2, data='Read permission required'
+[2025-11-18 21:15:12] Response sent: error_code=2
+[2025-11-18 21:15:41] Request from 127.0.0.1:38836 - Request received
+[2025-11-18 21:15:41] About to send response for op=110, error_code=0, data='Access granted successfully'
+[2025-11-18 21:15:41] Response sent: error_code=0
+[2025-11-18 21:15:47] Request from 127.0.0.1:33286 - Request received
+[2025-11-18 21:15:47] Forwarding op 104 for file 'bhanu.txt' from user 'mohan'
+[2025-11-18 21:15:47] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:15:47] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:15:47] Response sent: error_code=0
+[2025-11-18 21:15:52] Request from 127.0.0.1:33296 - Request received
+[2025-11-18 21:15:52] About to send response for op=106, error_code=0, data='--> bhanu.txt
+'
+[2025-11-18 21:15:52] Response sent: error_code=0
+[2025-11-18 21:15:55] Request from 127.0.0.1:33310 - Request received
+[2025-11-18 21:15:55] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> mohan.txt
+'
+[2025-11-18 21:15:55] Response sent: error_code=0
+[2025-11-18 21:16:11] Request from 127.0.0.1:40986 - Request received
+[2025-11-18 21:16:11] About to send response for op=111, error_code=0, data='Access removed successfully'
+[2025-11-18 21:16:11] Response sent: error_code=0
+[2025-11-18 21:16:16] Request from 127.0.0.1:41000 - Request received
+[2025-11-18 21:16:16] About to send response for op=106, error_code=0, data='--> mohan.txt
+'
+[2025-11-18 21:16:16] Response sent: error_code=0
+[2025-11-18 21:16:30] Request from 127.0.0.1:40874 - Request received
+[2025-11-18 21:16:30] Forwarding op 113 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:16:30] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:16:30] About to send response for op=113, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:16:30] Response sent: error_code=0
+[2025-11-18 21:16:33] Request from 127.0.0.1:40880 - Request received
+[2025-11-18 21:16:33] About to send response for op=106, error_code=0, data='Accessible files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     0 |     0 | 2025-11-18 21:15:47 | bhanu |
+---------------------------------------------------------
+'
+[2025-11-18 21:16:33] Response sent: error_code=0
+[2025-11-18 21:16:40] Request from 127.0.0.1:36070 - Request received
+[2025-11-18 21:16:40] Forwarding op 108 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:16:40] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:16:40] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:16:40] Response sent: error_code=0
+[2025-11-18 21:16:52] Request from 127.0.0.1:46526 - Request received
+[2025-11-18 21:16:52] Forwarding op 105 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:16:52] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:16:52] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:16:52] Response sent: error_code=0
+[2025-11-18 21:17:13] Request from 127.0.0.1:36168 - Request received
+[2025-11-18 21:17:13] About to send response for op=110, error_code=0, data='Access granted successfully'
+[2025-11-18 21:17:13] Response sent: error_code=0
+[2025-11-18 21:17:19] Request from 127.0.0.1:41984 - Request received
+[2025-11-18 21:17:19] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> mohan.txt
+'
+[2025-11-18 21:17:19] Response sent: error_code=0
+[2025-11-18 21:17:30] Request from 127.0.0.1:54958 - Request received
+[2025-11-18 21:17:30] Forwarding op 105 for file 'bhanu.txt' from user 'mohan'
+[2025-11-18 21:17:30] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:17:30] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:17:30] Response sent: error_code=0
+[2025-11-18 21:17:37] Request from 127.0.0.1:54964 - Request received
+[2025-11-18 21:17:37] Forwarding op 108 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:17:37] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:17:37] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:17:37] Response sent: error_code=0
+[2025-11-18 21:17:57] Request from 127.0.0.1:50844 - Request received
+[2025-11-18 21:17:57] Forwarding op 113 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:17:57] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:17:57] About to send response for op=113, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:17:57] Response sent: error_code=0
+[2025-11-18 21:18:00] Request from 127.0.0.1:60352 - Request received
+[2025-11-18 21:18:00] Forwarding op 108 for file 'bhanu.txt' from user 'bhanu'
+[2025-11-18 21:18:00] Selected SS 127.0.0.1:9001 for file 'bhanu.txt'
+[2025-11-18 21:18:00] About to send response for op=108, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:18:00] Response sent: error_code=0
+[2025-11-18 21:22:20] Name Server started on port 8080
+[2025-11-18 21:22:39] Storage server registered successfully
+[2025-11-18 21:22:39] Request from 127.0.0.1:53622 - Request received
+[2025-11-18 21:22:39] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 21:22:39] Response sent: error_code=0
+[2025-11-18 21:22:58] Storage server registered successfully
+[2025-11-18 21:22:58] Request from 127.0.0.1:45456 - Request received
+[2025-11-18 21:22:58] About to send response for op=203, error_code=0, data='OK'
+[2025-11-18 21:22:58] Response sent: error_code=0
+[2025-11-18 21:23:16] Request from 127.0.0.1:47570 - Request received
+[2025-11-18 21:23:16] Client registered successfully
+[2025-11-18 21:23:16] About to send response for op=101, error_code=0, data='Registration successful'
+[2025-11-18 21:23:16] Response sent: error_code=0
+[2025-11-18 21:23:17] Request from 127.0.0.1:36490 - Request received
+[2025-11-18 21:23:17] About to send response for op=109, error_code=0, data='Users:
+--> bhanu
+--> mohan
+'
+[2025-11-18 21:23:17] Response sent: error_code=0
+[2025-11-18 21:23:20] Request from 127.0.0.1:36502 - Request received
+[2025-11-18 21:23:20] About to send response for op=106, error_code=0, data='--> bhanu.txt
+'
+[2025-11-18 21:23:20] Response sent: error_code=0
+[2025-11-18 21:23:24] Request from 127.0.0.1:36510 - Request received
+[2025-11-18 21:23:24] About to send response for op=107, error_code=0, data='File: bhanu.txt
+Owner: bhanu
+Created: 2025-11-18 21:23:24
+Last Modified: 2025-11-18 21:23:24
+Size: 0 bytes
+Last Accessed: 2025-11-18 21:23:24 by bhanu
+Access: bhanu (RW), mohan (RW)'
+[2025-11-18 21:23:24] Response sent: error_code=0
+[2025-11-18 21:23:26] Request from 127.0.0.1:36524 - Request received
+[2025-11-18 21:23:26] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> mohan.txt
+--> metadata.dat
+'
+[2025-11-18 21:23:26] Response sent: error_code=0
+[2025-11-18 21:23:40] Request from 127.0.0.1:35770 - Request received
+[2025-11-18 21:23:40] About to send response for op=107, error_code=0, data='File: mohan.txt
+Owner: mohan
+Created: 2025-11-18 21:23:40
+Last Modified: 2025-11-18 21:23:40
+Size: 0 bytes
+Last Accessed: 2025-11-18 21:23:40 by mohan
+Access: mohan (RW)'
+[2025-11-18 21:23:40] Response sent: error_code=0
+[2025-11-18 21:24:07] Request from 127.0.0.1:54374 - Request received
+[2025-11-18 21:24:07] About to send response for op=102, error_code=0, data='Created'
+[2025-11-18 21:24:07] Response sent: error_code=0
+[2025-11-18 21:24:23] Request from 127.0.0.1:49058 - Request received
+[2025-11-18 21:24:23] Forwarding op 105 for file 'newfile.txt' from user 'bhanu'
+[2025-11-18 21:24:23] Selected SS 127.0.0.1:9001 for file 'newfile.txt'
+[2025-11-18 21:24:23] About to send response for op=105, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:24:23] Response sent: error_code=0
+[2025-11-18 21:24:26] Request from 127.0.0.1:49072 - Request received
+[2025-11-18 21:24:26] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> newfile.txt
+'
+[2025-11-18 21:24:26] Response sent: error_code=0
+[2025-11-18 21:24:28] Request from 127.0.0.1:56988 - Request received
+[2025-11-18 21:24:28] About to send response for op=106, error_code=0, data='--> bhanu.txt
+--> mohan.txt
+--> metadata.dat
+--> newfile.txt
+'
+[2025-11-18 21:24:28] Response sent: error_code=0
+[2025-11-18 21:24:30] Request from 127.0.0.1:56998 - Request received
+[2025-11-18 21:24:30] About to send response for op=106, error_code=0, data='Accessible files with details:
+---------------------------------------------------------
+|  Filename  | Words | Chars | Last Access Time | Owner |
+|------------|-------|-------|------------------|-------|
+| bhanu.txt  |     0 |     0 | 2025-11-18 21:24:30 | bhanu |
+| newfile.txt |     1 |     5 | 2025-11-18 21:24:07 | bhanu |
+---------------------------------------------------------
+'
+[2025-11-18 21:24:30] Response sent: error_code=0
+[2025-11-18 21:24:41] Request from 127.0.0.1:48488 - Request received
+[2025-11-18 21:24:41] Forwarding op 104 for file 'newfile.txt' from user 'bhanu'
+[2025-11-18 21:24:41] Selected SS 127.0.0.1:9001 for file 'newfile.txt'
+[2025-11-18 21:24:41] About to send response for op=104, error_code=0, data='127.0.0.1 9001'
+[2025-11-18 21:24:41] Response sent: error_code=0

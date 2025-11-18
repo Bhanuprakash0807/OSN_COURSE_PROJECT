@@ -9,6 +9,9 @@
 #include <limits.h>
 #include <unistd.h>
 
+// count_words_and_chars is provided by storage_content.c
+extern void count_words_and_chars(const char *content, int *word_count, int *char_count);
+
 void load_file(const char *filename)
 {
     char filepath[MAX_PATH];
@@ -53,12 +56,31 @@ void load_file(const char *filename)
         return;
     }
 
+    // Update word/char counts and timestamps from filesystem
+    count_words_and_chars(files[num_files].content, &files[num_files].word_count, &files[num_files].char_count);
+    // Try to stat file for timestamps
+    snprintf(filepath, sizeof(filepath), "%s/%s", storage_path, filename);
+    struct stat st;
+    if (stat(filepath, &st) == 0)
+    {
+        files[num_files].last_modified = (time_t)st.st_mtime;
+        files[num_files].created_time = (time_t)st.st_ctime;
+    }
+    else
+    {
+        files[num_files].last_modified = time(NULL);
+        files[num_files].created_time = time(NULL);
+    }
+    files[num_files].last_access = time(NULL);
+
     num_files++;
     pthread_mutex_unlock(&files_mutex);
 
     fclose(fp);
-}
 
+    // Persist storage-server local metadata file
+    save_ss_metadata();
+}
 int save_file(FileData *file)
 {
     char filepath[MAX_PATH];
@@ -139,5 +161,7 @@ int save_file(FileData *file)
 
     // Cleanup backup (success path)
     unlink(backup_path);
+    // After successful save, update ss metadata file
+    save_ss_metadata();
     return 0;
 }
